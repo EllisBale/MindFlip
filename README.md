@@ -60,19 +60,19 @@ I used Balsamiq Wireframes to help structure the wireframes before and during th
 <details> 
 <summary> Mobile </summary>
 
- <img src="docs/wireframes/mobile index_1.png">
+ <img src="docs/wireframes/mobile.png">
 </details>
 <br>
 <details>
 <summary> Tablet </summary>
 
- <img src="docs/wireframes/tablet index_1.png">
+ <img src="docs/wireframes/tablet.png">
 </details>
 <br>
 <details>
 <summary> Desktop </summary>
 
- <img src="docs/wireframes/desktop index_1.png">
+ <img src="docs/wireframes/desktop .png">
 
 </details>
 
