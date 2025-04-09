@@ -11,7 +11,7 @@
 
 body {
 
-    background-color: gainsboro;
+    background-color: #2f6cd0;
     font-size: 16px;
     color: black;
     margin: 0 auto; 
@@ -22,10 +22,13 @@ body {
 
 .navbar {
     background-color:#2FD073;
-    height: 80px;
+    height: 8rem;
     font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: normal;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 
     /* https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/ */                         /* Place this link at the bottom of the index page */
     background-color: #2FD073;
@@ -45,5 +48,21 @@ body {
 
 .navbar a:hover {
     transform: scale(1.1);
+    transition: 0.5s;
 
+}
+
+
+.logo {
+    height: 7rem;
+    width: 8rem;
+    border-radius: 60px;
+    
+    
+}
+
+
+.logo:hover {
+    transform: rotate(360deg);
+    transition: 1s;
 }
