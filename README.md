@@ -19,13 +19,13 @@
 
 #### **User goals** ####
 
-
+The users goals are to have fun playing the game while improving their memory. To do this there is different levels which get harder to complete so that the user doesn't get boared.
 
 
 
 #### **Site owner goals** ####
 
-
+The aim of this website is to have fun playing a game made with javascript. The game is a memory card game which you can have fun playing while also offering several cognitive benefits. The website will allow users to have fun while improving their memory. I want users to be able to improve their hand and eye coordination, memory enhancement, cognitive development and mental agility such as processing speed.
 
 ## User stories
 
@@ -90,7 +90,7 @@ I used Balsamiq Wireframes to help structure the wireframes before and during th
 
 ### Fonts
 
-
+For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik Mono One which I felt goes well with the website category memory games also giving it a playfull feel to the site. For text in the body I used Work Sans because I was looking for something minimal so that the text didn't distract the user for the main point of the website which is the game.
 
 ## 3. Technologies
 
@@ -101,7 +101,7 @@ I used Balsamiq Wireframes to help structure the wireframes before and during th
 
 * CSS - This language I also mainly used to style my html elements to make them look more visually appealing to users that navigate the website.
 
-* Javascript 
+* Javascript - This makes pages more interactive and dynamic. 
 
 ### Tools used in the project
 
@@ -114,6 +114,7 @@ I used Balsamiq Wireframes to help structure the wireframes before and during th
 
 #### **Nav bar**
 
+The navbar is simple and has 1 link on the navbar for the "How to play" page which is located on the right. The website logo is to the left of the navbar and has a animation added with CSS that rotates the logo 360 degrees when hovered over. The rotation of the logo goes well with the website name which is "Mind Flip". I used Boostrap for the navbar container and a svg design for the background.
 
 <details>
 
