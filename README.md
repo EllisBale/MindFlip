@@ -5,6 +5,7 @@
 
 #### **Live website**
 
+https://ellisbale.github.io/MindFlip/
 
 
 ## 1. UX
@@ -87,6 +88,9 @@ I used Balsamiq Wireframes to help structure the wireframes before and during th
 ### Colours
 
 
+For the navbar I used 2fd073 which is a type of green. I picked this colour for the navbar because I felt like it was visually appealing and great for a casual game. The black text on the navbar makes for high readability with the green. It helps with visually impaired users because of the good contrast score from https://imagecolorpicker.com/color-code/2fd073. The second colour I used for this website is a type of dark gray (#1E1E1E) for the body. I think this colour is easy on the eyes as well as going well with the navbar colour. The background is meant to be subtle and not distract the user when playing.
+
+![Shamrock](docs/readme_images/shamrock.png)  ![Cod gray](docs/readme_images/codgray.png)
 
 ### Fonts
 
