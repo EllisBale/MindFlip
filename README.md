@@ -19,7 +19,7 @@
 
 #### **User goals** ####
 
-The users goals are to have fun playing the game while improving their memory. To do this there is different levels which get harder to complete so that the user doesn't get boared.
+The users goals are to have fun playing the game while improving their memory. To do this there is different levels which get harder to complete so that the user doesn't get bored.
 
 
 
