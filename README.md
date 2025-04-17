@@ -372,6 +372,7 @@ The project will now of been cloned on your local machine for use.
 
 ## Credits
 
+What I used to shuffle my array (https://www.youtube.com/watch?v=FGAUekwri1Q&ab_channel=BroCode/)
 
 
 ## Acknowledgements

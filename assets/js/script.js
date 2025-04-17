@@ -1,4 +1,5 @@
-const images = ["3","4","5","6","7","8","8","","","","","" ]; 
+
+const images = ["images\fox.jpg","images\fox.jpg","images\fox.jpg","images\fox.jpg","images\fox.jpg","","","","","","","" ]; 
 let level = 1;
 let flippedCards = [];
 let matchedPairs = 0;
@@ -19,7 +20,17 @@ function startLevel() {
     resultText.innerText = "";
     nextLevel.classList.add("hidden");
 
-};
+    // This makes it reset back to 1 when 6 is completed
+    if (level > 6) {
+        level = 1;
+    }
+
+    // Set's the grid size depending on what level it is on
+    let gridSize = Math.min(level + 1, 6); // Math.min returns the smallest of the numbers
+    gameBoard.style.gridTemplateColumns = `repeat(${gridSize}, 100px)`;
+
+    
+}
 
 nextLevelButton.addEventListener("click", startNextLevel);
 
@@ -33,20 +44,6 @@ function shuffle(array) {
     }
 }
 
-// Board size on what level you are on
-
-let gridSize = Math.min(level + 1, 6); // Grid goes up to 6x6 max
-
-
-// Creates the game board
-
-cards.forEach((img, index) => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    card.dataset.index = index;
-    card.dataset.img = img;
-    card.innerHTML = "?";
-})
 
 // Next level function
 function nextLevel() {
@@ -60,3 +57,9 @@ function resetLevel() {
 };
 
 
+function startNextLevel() {
+    
+}
+
+
+startLevel();
