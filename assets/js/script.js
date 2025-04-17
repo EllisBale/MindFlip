@@ -1,4 +1,4 @@
-const emojis = ["🍩", "🍪", "🏀", "✂️", "☀️", "☂️", "👻", "🎩", "🐶", "🦖", "🌎", "🍎"]; // Emojis from https://getemoji.com/
+const emojis = ["","","","","","","","","","","","" ]; // Emojis from https://getemoji.com/
 let level = 1;
 let flippedCards = [];
 let matchedPairs = 0;
@@ -15,7 +15,17 @@ const nextLevelButton = document.getElementById("next-level"); // Next level but
 
 function startLevel() {
 
+    gameBoard.innerHTML = "";
+    resultText.innerText = "";
+    nextLevel.classList.add("hidden");
+
 };
+
+
+
+// Board size on what level you are on
+
+let gridSize = Math.min(level + 1, 6); // Grid goes up to 6x6 max
 
 
 

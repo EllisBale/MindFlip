@@ -20,6 +20,10 @@ body {
     margin: 0 auto; 
     background-color: #1E1E1E;
     color: #E0E0E0;
+    display: flex;
+    text-align: center;
+  
+    
 }
 
 /* Navbar */
@@ -57,12 +61,12 @@ body {
 .logo {
     height: 7rem;
     width: 8rem;
-    border-radius: 60px;    
+    border-radius: 20px;    
 }
 
 .logo:hover {
     transform: rotate(360deg);
-    transition: 1s;
+    transition: 2s;
 }
 
 h1 {
@@ -71,11 +75,15 @@ h1 {
 
 
 .game-board {
-
-    background-color: blue;
-    margin-bottom: 550px;
-    
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+   margin-top: 20px;
+   
+   
 }
+
+
 
 
 .game-buttons-div {
