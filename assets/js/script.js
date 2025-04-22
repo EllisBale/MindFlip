@@ -1,5 +1,6 @@
 
-const images = ["images/fox.jpg","images/fox.jpg","images\fox.jpg","images\fox.jpg","images\fox.jpg","","","","","","","" ]; 
+const images = ["images/fox.jpg","images/bear.jpg","images\bird.jpg","images\cat.jpg","images\dog.jpg","images/elephant.jpg","images/giraffe.jpg","images/gorilla.jpg",
+"images/penguin.jpg","images/rabbit.jpg","images/tiger.jpg"]; 
 let level = 1;
 let flippedCards = [];
 let matchedPairs = 0;
@@ -63,6 +64,13 @@ function shuffle(array) {
         let random = Math.floor(Math.random() * (i + 1));
         [array[i], array[random]] = [array[random], array[i]];
        
+    }
+}
+
+
+function flipcard(card) {
+    if(flippedCards.length < 2 && !card.classList.contains("flipped")) {
+        card.classList.add("flipped");
     }
 }
 
