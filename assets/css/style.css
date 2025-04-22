@@ -93,7 +93,12 @@ h1 {
     align-items: center;
     justify-content:center;
     cursor: pointer;
+    transition: 0.4s;
   
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 

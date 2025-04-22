@@ -19,7 +19,7 @@ function startLevel() {
 
     gameBoard.innerHTML = "";
     result.innerText = "";
-    nextLevelButton.classList.add("hidden");
+    nextLevelButton.classList.add(null); 
 
     // This makes it reset back to 1 when 6 is completed
     if (level > 6) {
@@ -77,14 +77,36 @@ function flipcard(card) {
         flippedCards.push(card); // Adds new item to the end of the array
 
         if (flippedCards.length === 2) {
-            setTimeout(checkmatch, 500);
+            setTimeout(checkMatch, 500);
         }
     }
 }
 
-
+// Function to check if cards match
 function checkMatch() {
-    
+    const [card1, card2] = flippedCards;
+
+    if (card1.dataset.imagePath === card2.dataset.imagePath) {
+        card1.classList.add("hidden");
+        card2.classList.add("hidden");
+        matchedPairs++;
+
+        if (matchedPairs === (gameBoard.length / 2)) {
+            if (level === 6) {
+                result.innerText = " Well done, you completed all the levels"
+            }
+        }
+
+
+
+    } else {
+        card1.classList.remove("flipped");
+        card2.classList.rempve("flipped");
+        card1.innerHTML = "?";
+        card2.innerHTML = "?";
+    }
+
+    flippedCards = [];
 }
 
 
