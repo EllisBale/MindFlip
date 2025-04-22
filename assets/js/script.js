@@ -73,7 +73,7 @@ function shuffle(array) {
 function flipcard(card) {
     if(flippedCards.length < 2 && !card.classList.contains("flipped")) {
         card.classList.add("flipped");
-        card.innerHTML = `<img src="${card.dataset.imagePath}" alt="card-image" height: 100% width: 100%  object-fit: cover;>`;
+        card.innerHTML = `<img src="${card.dataset.imagePath}" alt="card-image" style="height: 100%; width: 100%;  object-fit: cover;">`;
     }
 }
 
