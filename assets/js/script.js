@@ -92,12 +92,17 @@ function checkMatch() {
         matchedPairs++;
 
         if (matchedPairs === (gameBoard.length / 2)) {
-            if (level === 6) {
-                result.innerText = " Well done, you completed all the levels"
+            if (level === 6) {  
+                result.innerText = " Well done, you completed all the levels";
+                setTimeout(() => {
+                    level = 1; //Resets to level 1 when level 6 is completed
+                    startLevel(); 
+                }, 2000);
+            }  else {
+                result.innerText = "Level complete!";
+
             }
         }
-
-
 
     } else {
         card1.classList.remove("flipped");
@@ -109,10 +114,12 @@ function checkMatch() {
     flippedCards = [];
 }
 
+nextLevelButton.addEventListener("click", startNextLevel); //starts next level
+
 
 // Next level function
 function nextLevel() {
-
+        
 };
 
 
