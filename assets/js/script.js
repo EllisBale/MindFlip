@@ -1,6 +1,6 @@
 
-const images = ["images/fox.jpg","images/bear.jpg","images\bird.jpg","images\cat.jpg","images\dog.jpg","images/elephant.jpg","images/giraffe.jpg","images/gorilla.jpg",
-"images/penguin.jpg","images/rabbit.jpg","images/tiger.jpg"]; 
+const images = ["assets/images/fox.jpg","assets/images/bear.jpg","assets/images/bird.jpg","assets/images/cat.jpg","assets/images/dog.jpg","assets/images/elephant.jpg",
+"assets/images/giraffe.jpg","assets/images/gorilla.jpg", "assets/images/penguin.jpg","assets/images/rabbit.jpg","assets/images/tiger.jpg"]; 
 let level = 1;
 let flippedCards = [];
 let matchedPairs = 0;
@@ -47,6 +47,8 @@ function startLevel() {
         const card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = "?";
+        card.dataset.index = index;
+        card.dataset.imagePath = imagePath;
         card.addEventListener("click", () => flipcard(card));
         gameBoard.appendChild(card);
     })
@@ -71,6 +73,7 @@ function shuffle(array) {
 function flipcard(card) {
     if(flippedCards.length < 2 && !card.classList.contains("flipped")) {
         card.classList.add("flipped");
+        card.innerHTML = `<img src="${card.dataset.imagePath}" alt="card-image" height: 100% width: 100%  object-fit: cover;>`;
     }
 }
 
