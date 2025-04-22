@@ -69,12 +69,22 @@ function shuffle(array) {
     }
 }
 
-
+// Function to flip the cards
 function flipcard(card) {
     if(flippedCards.length < 2 && !card.classList.contains("flipped")) {
         card.classList.add("flipped");
         card.innerHTML = `<img src="${card.dataset.imagePath}" alt="card-image" style="height: 100%; width: 100%;  object-fit: cover;">`;
+        flippedCards.push(card); // Adds new item to the end of the array
+
+        if (flippedCards.length === 2) {
+            setTimeout(checkmatch, 500);
+        }
     }
+}
+
+
+function checkMatch() {
+    
 }
 
 
