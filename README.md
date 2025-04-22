@@ -45,11 +45,14 @@ The aim of this website is to have fun playing a game made with javascript. The 
 
 **Reviewing other websites**
 
-
+I took inspiration from the other websites below. I added parts to my website such as moves, levels and next level button. I also wanted to see how they adapt their games to smaller screen sizes such as on mobile. To test this I used chrome dev tools to change the layout of my screen. The other website used flexbox and media query in CSS to adapt to smaller screen sizes which can help with my project.
 
 
 **Websites I visited**
 
+[Helpfullgames](https://www.helpfulgames.com/subjects/brain-training/memory.html)
+
+[CodePen](https://codepen.io/zerospree/full/bNWbvW)
 
 ## 2. Design
 
@@ -168,8 +171,8 @@ The navbar is simple and has 1 link on the navbar for the "How to play" page whi
 <details>
 <summary>Screenshot </summary>
 
-### Hero ###
-![Homepage hero image]()
+
+
 
 
 
@@ -226,7 +229,7 @@ To test my html code validation I used the [W3C HTML Validator](https://validato
 <details>
 <summary> index.html </summary>
 
-Removed the extra div
+
 
 <img src="">
 
