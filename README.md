@@ -268,7 +268,22 @@ I tested different devices through Google Chrome Developer Tools. This tool allo
 
 ### Bugs during development and fixes
 
+<details>
 
+<summary> Images not showing up from my array </summary>
+
+I figured out the problem was to do with my images file path and simply forgot to add "assets" before "images/"/
+
+**Before:**
+
+`const images = ["images/fox.jpg","images/bear.jpg","images\bird.jpg","images\cat.jpg","images\dog.jpg","images/elephant.jpg","images/giraffe.jpg","images/gorilla.jpg",
+"images/penguin.jpg","images/rabbit.jpg","images/tiger.jpg"];`
+
+**Fix:**
+
+`const images = ["assets/images/fox.jpg","assets/images/bear.jpg","assets/images/bird.jpg","assets/images/cat.jpg","assets/images/dog.jpg","assets/images/elephant.jpg",
+"assets/images/giraffe.jpg","assets/images/gorilla.jpg", "assets/images/penguin.jpg","assets/images/rabbit.jpg","assets/images/tiger.jpg"];`
+</details>
 
 
 

@@ -57,7 +57,7 @@ function startLevel() {
     
 }
 
-nextLevelButton.addEventListener("click", startNextLevel);
+nextLevelButton.addEventListener("click", nextLevel);
 
 // Fisher-Yates algorithm
 // Shuffle cards function
@@ -119,7 +119,8 @@ nextLevelButton.addEventListener("click", startNextLevel); //starts next level
 
 // Next level function
 function nextLevel() {
-        
+    level ++;
+    startLevel();
 };
 
 
