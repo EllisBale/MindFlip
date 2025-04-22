@@ -49,7 +49,7 @@ function startLevel() {
         card.innerHTML = "?";
         card.dataset.index = index;
         card.dataset.imagePath = imagePath;
-        card.addEventListener("click", () => flipcard(card));
+        card.addEventListener("click", () => flipCard(card));
         gameBoard.appendChild(card);
     })
 
@@ -70,7 +70,7 @@ function shuffle(array) {
 }
 
 // Function to flip the cards
-function flipcard(card) {
+function flipCard(card) {
     if(flippedCards.length < 2 && !card.classList.contains("flipped")) {
         card.classList.add("flipped");
         card.innerHTML = `<img src="${card.dataset.imagePath}" alt="card-image" style="height: 100%; width: 100%;  object-fit: cover;">`;
@@ -91,7 +91,7 @@ function checkMatch() {
         card2.classList.add("hidden");
         matchedPairs++;
 
-        if (matchedPairs === (gameBoard.length / 2)) {
+        if (matchedPairs === (gameBoard.children.length / 2)) {
             if (level === 6) {  
                 result.innerText = " Well done, you completed all the levels";
                 setTimeout(() => {
@@ -106,7 +106,7 @@ function checkMatch() {
 
     } else {
         card1.classList.remove("flipped");
-        card2.classList.rempve("flipped");
+        card2.classList.remove("flipped");
         card1.innerHTML = "?";
         card2.innerHTML = "?";
     }
