@@ -1,6 +1,6 @@
 
 const images = ["assets/images/fox.jpg","assets/images/bear.jpg","assets/images/bird.jpg","assets/images/cat.jpg","assets/images/dog.jpg","assets/images/elephant.jpg",
-"assets/images/giraffe.jpg","assets/images/gorilla.jpg", "assets/images/penguin.jpg","assets/images/rabbit.jpg","assets/images/tiger.jpg"]; 
+"assets/images/giraffe.jpg","assets/images/gorilla.jpg", "assets/images/penguin.jpg","assets/images/rabbit.jpg","assets/images/tiger.jpg", "assets/images/monkey.jpg", "assets/images/cow.jpg"]; 
 let level = 1;
 let flippedCards = [];
 let matchedPairs = 0;
@@ -11,6 +11,7 @@ const gameBoard = document.querySelector(".game-board"); // Game board
 const result = document.getElementById("result"); // Result text 
 const resetButton = document.getElementById("reset-level"); // Resets current level
 const nextLevelButton = document.getElementById("next-level"); // Next level button
+const gameLevelText = document.getElementById("game-level-text") // Game level text
 
 
 // start level function 
@@ -53,8 +54,8 @@ function startLevel() {
         gameBoard.appendChild(card);
     })
 
-
-    
+    gameLevelText.innerText = `Level: ${level}`; // Changes level number text based on what level
+     
 }
 
 nextLevelButton.addEventListener("click", nextLevel);

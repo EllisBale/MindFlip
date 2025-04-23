@@ -267,7 +267,7 @@ I tested different devices through Google Chrome Developer Tools. This tool allo
 
 
 ### Bugs during development and fixes
-
+<br>
 <details>
 
 <summary> Images not showing up from my array </summary>
@@ -285,6 +285,35 @@ I figured out the problem was to do with my images file path and simply forgot t
 "assets/images/giraffe.jpg","assets/images/gorilla.jpg", "assets/images/penguin.jpg","assets/images/rabbit.jpg","assets/images/tiger.jpg"];`
 </details>
 
+<br>
+
+<details>
+
+<summary> Unmatching cards not flipping back </summary>
+
+I noticed when I was playing, the matching cards would work and be hidden but the unmatching cards would just stay flipped over and not turn back. I fixed this by having a look at my else statement in my checkMatch function and found a spelling mistake which I corrected.
+
+**Before:**
+
+
+`else {
+        card1.classList.remove("flipped");
+        card2.classList.rempve("flipped");
+        card1.innerHTML = "?";
+        card2.innerHTML = "?";
+    }`
+
+
+**Fix:**
+
+ `else {
+        card1.classList.remove("flipped");
+        card2.classList.remove("flipped");
+        card1.innerHTML = "?";
+        card2.innerHTML = "?";
+    }`
+
+</details>
 
 
 ### Testing User Stories
