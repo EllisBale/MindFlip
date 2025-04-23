@@ -5,6 +5,15 @@ let level = 1;
 let flippedCards = [];
 let matchedPairs = 0;
 
+const levels = [ //Grid size for each level
+    [2,2], //2x2
+    [3,2],  //3x3
+    [4,3],  //4x3
+    [4,4],  //4x4
+    [5,4],  //5x4
+    [6,4],  //6x4
+]
+
 // DOM elements
 
 const gameBoard = document.querySelector(".game-board"); // Game board
