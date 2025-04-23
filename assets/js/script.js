@@ -83,7 +83,7 @@ function shuffle(array) {
 function flipCard(card) {
     if(flippedCards.length < 2 && !card.classList.contains("flipped")) {
         card.classList.add("flipped");
-        card.innerHTML = `<img src="${card.dataset.imagePath}" alt="card-image" style="height: 100%; width: 100%;  object-fit: cover;">`;
+        card.innerHTML = `<img src="${card.dataset.imagePath}" alt="card-image" style="height: 100%; width: 100%;  object-fit: cover;  border-radius: 5px;">`;
         flippedCards.push(card); // Adds new item to the end of the array
 
         if (flippedCards.length === 2) {
