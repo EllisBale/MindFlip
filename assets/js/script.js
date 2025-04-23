@@ -5,14 +5,14 @@ let level = 1;
 let flippedCards = [];
 let matchedPairs = 0;
 
-const levels = [ //Grid size for each level
+const levels = [ // Grid size for each level
     [2,2], //2x2
     [3,2],  //3x3
     [4,3],  //4x3
     [4,4],  //4x4
     [5,4],  //5x4
     [6,4],  //6x4
-]
+];
 
 // DOM elements
 
@@ -37,12 +37,12 @@ function startLevel() {
     }
 
     // Set's the grid size depending on what level it is on
-    let gridSize = Math.min(level + 1, 6); // Math.min returns the smallest of the numbers
-    gameBoard.style.gridTemplateColumns = `repeat(${gridSize}, 100px)`;
-
-    let numPair = (gridSize * gridSize) / 2;
-    let selectedImages = images.slice(0, numPair);
-    let cards = [...selectedImages, ...selectedImages];
+   const [cols, rows] = levels[level - 1];
+   const totalCards = cols * rows;
+   const numPair = totalCards / 2;
+   gameBoard.style.gridTemplateColumns = `repeat(${cols}, 100px)`;
+   let selectedImages = images.slice(0, numPair);
+   let cards = [...selectedImages, ...selectedImages];
 
     shuffle(cards);
     flippedCards = [];
