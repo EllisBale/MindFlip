@@ -4,6 +4,7 @@ const images = ["assets/images/fox.jpg","assets/images/bear.jpg","assets/images/
 let level = 1;
 let flippedCards = [];
 let matchedPairs = 0;
+let moves = 0;
 
 const levels = [ // Grid size for each level
     [2,2], //2x2
@@ -23,6 +24,9 @@ const nextLevelButton = document.getElementById("next-level");// Next level butt
 const gameLevelText = document.getElementById("game-level-text")// Game level text
 const levelSelect = document.getElementById("level-select")// Level Select 
 const movesText = document.getElementById("moves")// Moves text
+
+
+// Functions
 
 
 // start level function 
@@ -49,6 +53,10 @@ function startLevel() {
     shuffle(cards);
     flippedCards = [];
     matchedPairs = 0;
+
+
+    moves = 0;
+    updateMoves(); // Moves reset after each level
 
 
 
@@ -89,6 +97,8 @@ function flipCard(card) {
         flippedCards.push(card); // Adds new item to the end of the array
 
         if (flippedCards.length === 2) {
+            moves ++;
+            updateMoves();
             setTimeout(checkMatch, 500);
         }
     }
@@ -137,12 +147,18 @@ function nextLevel() {
     startLevel();
 };
 
-
+// Function to select levels
 function levelSelector () {
     levelSelect.addEventListener("change", (e) => {
         level = parseInt(e.target.value);
         startLevel()
     });
+}
+
+
+// Tracks moves for each pair of cards flipped
+function updateMoves() {
+    movesText.innerText = `${moves}`;
 }
 
 

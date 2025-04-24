@@ -11,11 +11,10 @@ https://ellisbale.github.io/MindFlip/
 ## 1. UX
 
 
-### Project Goals
 
 #### Project purpose 
 
-
+To have fun playing a game while improving brain function through memory game.
 
 
 #### **User goals** ####
