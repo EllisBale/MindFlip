@@ -22,6 +22,7 @@ const resetButton = document.getElementById("reset-level"); // Resets current le
 const nextLevelButton = document.getElementById("next-level");// Next level button
 const gameLevelText = document.getElementById("game-level-text")// Game level text
 const levelSelect = document.getElementById("level-select")// Level Select 
+const movesText = document.getElementById("moves")// Moves text
 
 
 // start level function 
