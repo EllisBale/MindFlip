@@ -21,6 +21,7 @@ const result = document.getElementById("result");// Result text
 const resetButton = document.getElementById("reset-level"); // Resets current level
 const nextLevelButton = document.getElementById("next-level");// Next level button
 const gameLevelText = document.getElementById("game-level-text")// Game level text
+const levelSelect = document.getElementById("level-select")// Level Select 
 
 
 // start level function 
@@ -136,6 +137,14 @@ function nextLevel() {
 };
 
 
+function levelSelector () {
+    levelSelect.addEventListener("change", (e) => {
+        level = parseInt(e.target.value);
+        startLevel()
+    });
+}
+
+
 // Reset level function
 function resetLevel() {
 };
@@ -144,5 +153,8 @@ function resetLevel() {
 function startNextLevel() {   
 }
 
+levelSelector();
 
 startLevel();
+
+
