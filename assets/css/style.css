@@ -115,7 +115,7 @@ h1 {
 
 .card.flipped {
 
-    border: solid 0px;
+    border: none;
     transform: rotateY(180deg);
 }
 
@@ -127,7 +127,6 @@ h1 {
 }
 
 .game-button {
-
     background-color: #E8E8E8;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
@@ -136,17 +135,22 @@ h1 {
     padding: 0.3rem;  
 }
 
-
-
-
+#next-level {
+    background-color: gold;
+}
 
 
 #game-level-text {
-    
     font-family: "DynaPuff", system-ui;
     
 }
 
+#moves-text {
+    font-family: "DynaPuff", system-ui;
+}
+
+
+/* Footer section */
 
 footer {
 
