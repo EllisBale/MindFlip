@@ -1,4 +1,4 @@
-# Mind Flip 
+# Mind Flip - Match the animal
 
 <img src="">
 

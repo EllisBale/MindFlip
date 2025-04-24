@@ -16,11 +16,11 @@ const levels = [ // Grid size for each level
 
 // DOM elements
 
-const gameBoard = document.querySelector(".game-board"); // Game board
-const result = document.getElementById("result"); // Result text 
+const gameBoard = document.querySelector(".game-board");// Game board
+const result = document.getElementById("result");// Result text 
 const resetButton = document.getElementById("reset-level"); // Resets current level
-const nextLevelButton = document.getElementById("next-level"); // Next level button
-const gameLevelText = document.getElementById("game-level-text") // Game level text
+const nextLevelButton = document.getElementById("next-level");// Next level button
+const gameLevelText = document.getElementById("game-level-text")// Game level text
 
 
 // start level function 
@@ -29,7 +29,7 @@ function startLevel() {
 
     gameBoard.innerHTML = "";
     result.innerText = "";
-    nextLevelButton.classList.add(null); 
+    nextLevelButton.classList.add("hidden"); 
 
     // This makes it reset back to 1 when 6 is completed
     if (level > 6) {
@@ -110,6 +110,7 @@ function checkMatch() {
                 }, 2000);
             }  else {
                 result.innerText = "Level complete!";
+                nextLevelButton.classList.remove("hidden");
 
             }
         }
@@ -119,6 +120,7 @@ function checkMatch() {
         card2.classList.remove("flipped");
         card1.innerHTML = "?";
         card2.innerHTML = "?";
+        
     }
 
     flippedCards = [];
@@ -136,12 +138,10 @@ function nextLevel() {
 
 // Reset level function
 function resetLevel() {
-
 };
 
 
-function startNextLevel() {
-    
+function startNextLevel() {   
 }
 
 
