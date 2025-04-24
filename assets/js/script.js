@@ -164,7 +164,10 @@ function updateMoves() {
 
 // Reset level function
 function resetLevel() {
+    startLevel();
 };
+
+resetButton.addEventListener("click", resetLevel);
 
 
 function startNextLevel() {   
