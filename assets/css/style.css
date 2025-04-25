@@ -54,7 +54,19 @@ body {
     font-weight:600;
 }
 
-.navbar a:hover {
+
+
+
+.h2play {
+    font-family: "DM Serif Text", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+
+}
+
+.h2play:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
