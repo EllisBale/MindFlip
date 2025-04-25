@@ -25,6 +25,11 @@ const gameLevelText = document.getElementById("game-level-text")// Game level te
 const levelSelect = document.getElementById("level-select")// Level Select 
 const movesText = document.getElementById("moves")// Moves text
 
+// How to play DOM elements 
+const modal = document.getElementById("myModal");
+const trigger = document.getElementById("howtoplay");
+const span = document.getElementsByClassName("close")[0];
+
 
 // Functions
 

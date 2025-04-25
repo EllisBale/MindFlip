@@ -131,6 +131,7 @@ h1 {
     font-family:  "Rubik Mono One", monospace;
 }
 
+/* Game board grid */
 
 .game-board {
     display: grid;
@@ -161,6 +162,7 @@ h1 {
    
 }
 
+/* Hidden class for cards */
 .hidden {
     visibility: hidden;
     
@@ -172,6 +174,8 @@ h1 {
     border: none;
     transform: rotateY(180deg);
 }
+
+/* Game buttons */
 
 .game-buttons {
 
@@ -224,6 +228,8 @@ footer {
    
     
 }
+
+/* Font Awesome icon */
 
 .fa-github {
 
