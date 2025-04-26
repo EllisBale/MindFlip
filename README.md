@@ -14,7 +14,7 @@ https://ellisbale.github.io/MindFlip/
 
 #### Project purpose 
 
-To have fun playing a game while improving brain function through memory game.
+To have fun playing a game while improving brain function through memory game. I chose to have animal images which gave me plenty of images to add to the cards.
 
 
 #### **User goals** ####
@@ -263,7 +263,7 @@ I tested different devices through Google Chrome Developer Tools. This tool allo
 
 ### Browser Compatibility 
 
-
+Chrome - This is the browser I used to view my website during development.
 
 ### Bugs during development and fixes
 <br>

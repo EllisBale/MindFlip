@@ -35,11 +35,16 @@ Level Select (feature) Expected Result:  Clicking on the button will give you op
 
 
 
-Reset Level (feature) Expected Result: Current level resets and shuffles again.  Status:      Description: 
+Reset Level (feature) Expected Result: Current level resets and shuffles again as well as resetting the moves text back to 1.  Status:      Description: 
 
 
 
 Max level is complete and sends user to level 1 (feature) Expected Result: Sends the user back to level 1.  Status:      Description: 
+
+
+
+
+How to play (feature) Expected Result: When clicked on it open up a modal explaining how to play the game.  Status:      Description: 
 
 
 
