@@ -87,7 +87,7 @@ function startLevel() {
     cards.forEach((imagePath, index) => { // Calls a function for each item
         const card = document.createElement("div");
         card.classList.add("card");
-        card.innerHTML = "?";
+        card.innerHTML = `<i class="fa-solid fa-question fa-lg"></i>`;
         card.dataset.index = index;
         card.dataset.imagePath = imagePath;
         card.addEventListener("click", () => flipCard(card));
@@ -151,8 +151,8 @@ function checkMatch() {
     } else {
         card1.classList.remove("flipped");
         card2.classList.remove("flipped");
-        card1.innerHTML = "?";
-        card2.innerHTML = "?";
+        card1.innerHTML = `<i class="fa-solid fa-question fa-lg"></i>`;
+        card2.innerHTML = `<i class="fa-solid fa-question fa-lg"></i>`;
         
     }
 

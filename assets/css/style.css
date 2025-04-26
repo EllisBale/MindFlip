@@ -258,3 +258,29 @@ footer {
 .fa-github:hover {
     color: #5e5b5b;
 }
+
+
+
+.fa-question {
+    font-weight: 900;
+    color: black;
+    
+}
+
+
+.fa-question:hover {
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+
+
+
+
+/* Medium devices (tablets, 768px and below) */
+@media screen and (max-width: 768px) {
+
+
+    
+
+}
