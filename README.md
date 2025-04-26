@@ -420,6 +420,8 @@ The project will now of been cloned on your local machine for use.
 
 What I used to shuffle my array (https://www.youtube.com/watch?v=FGAUekwri1Q&ab_channel=BroCode/)
 
+How to play JavaScript modal (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal)
+
 
 ## Acknowledgements
 
