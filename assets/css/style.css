@@ -11,6 +11,9 @@
 /* DynaPuff */
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
 
+/* Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 
 
 * {
@@ -86,6 +89,8 @@ body {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   color: #000;
   font-weight: 600;
+  margin-top: 40px;
+  
 }
 
 
@@ -95,8 +100,15 @@ body {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    border-radius: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
 }
 
+
+strong {
+    font-size: larger;
+}
 
 
 .close {
@@ -133,6 +145,9 @@ h1 {
     font-family:  "Rubik Mono One", monospace;
 }
 
+h2 {
+    font-family:  "Rubik Mono One", monospace;
+}
 /* Game board grid */
 
 .game-board {
