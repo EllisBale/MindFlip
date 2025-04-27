@@ -143,13 +143,14 @@ strong {
 
 h1 {
     font-family:  "Rubik Mono One", monospace;
+    margin-top: 3.5rem;
 }
 
 h2 {
     font-family:  "Rubik Mono One", monospace;
 }
-/* Game board grid */
 
+/* Game board grid */
 .game-board {
     display: grid;
     justify-content: center;
@@ -171,7 +172,6 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .card:hover {
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); 
     transform: scale(1.05);
@@ -181,8 +181,7 @@ h2 {
 
 /* Hidden class for cards */
 .hidden {
-    visibility: hidden;
-    
+    visibility: hidden;   
 }
 
 
@@ -195,8 +194,6 @@ h2 {
 /* Game buttons */
 
 .game-buttons {
-
-    
     margin-bottom: 10rem;
     height: 4rem;
 }
@@ -216,8 +213,7 @@ h2 {
 
 
 #game-level-text {
-    font-family: "DynaPuff", system-ui;
-    
+    font-family: "DynaPuff", system-ui;  
 }
 
 #moves-text {
@@ -228,7 +224,6 @@ h2 {
 /* Footer section */
 
 footer {
-
     background: #2A2A2A;
     position: relative;
     left: 0;
@@ -242,39 +237,42 @@ footer {
     z-index: 100;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 2rem;
-   
-    
 }
 
 /* Font Awesome icon */
 
 .fa-github {
-
     font-size: 2.5rem;
     color: rgb(240, 240, 240);
-
 }
 
 .fa-github:hover {
     color: #5e5b5b;
 }
 
-
-
 .fa-question {
     font-weight: 900;
-    color: black;
-    
+    color: black;  
 }
 
+/* Animation for fa-question */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
 
-.fa-question:hover {
-    transform: rotateY(180deg);
-    transition: 1s;
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
+.bounce-on-hover {
+    transition: 0.3s;
+}
 
-
+ .card:hover .bounce-on-hover {
+    animation: bounce 0.5s;
+}
 
 
 /* Medium devices (tablets, 768px and below) */
