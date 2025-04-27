@@ -9,12 +9,12 @@ let moves = 0;
 // Game levels
 
 const levels = [ // Grid size for each level
-    [2,2], //2x2
-    [3,2],  //3x3
-    [4,3],  //4x3
-    [4,4],  //4x4
-    [5,4],  //5x4
-    [6,4],  //6x4
+    [2,2], //2x2   // Level 1
+    [3,2],  //3x3  // Level 2 
+    [4,3],  //4x3  // Level 3
+    [4,4],  //4x4  // Level 4
+    [5,4],  //5x4  // Level 5
+    [6,4],  //6x4  // Level 6 
 ];
 
 // DOM elements
