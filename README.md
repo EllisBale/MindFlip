@@ -101,7 +101,7 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 ## 3. Technologies
 
 
-### Languages used in this project
+### Languages and tools used in this project
 
 * HTML - The main language I use for this website is HTML which is the foundation and the structure of the website.
 
@@ -109,8 +109,21 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 * Javascript - This makes pages more interactive and dynamic. 
 
-### Tools used in the project
+* Lighthouse - This is used to test websites performance during and at the end of devlopment.
 
+* Wave - Wave is used for testing the websites accessibility.
+
+* W3C - This is used for testing my code validation.
+
+* Git - This is used for committing changes which is then pushed to Github to be stored.
+
+* Github - Github allows me to host my website on as well as my files.
+
+* Balsamiq - I used this software to create wireframes before development and changing it during development.
+
+* Favicon.io - This website generates favicons.
+
+* VS Code - This software was used to code my website during this project.
 
 
 
