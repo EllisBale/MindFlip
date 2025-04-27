@@ -6,6 +6,8 @@ let flippedCards = [];
 let matchedPairs = 0;
 let moves = 0;
 
+// Game levels
+
 const levels = [ // Grid size for each level
     [2,2], //2x2
     [3,2],  //3x3
@@ -24,6 +26,8 @@ const nextLevelButton = document.getElementById("next-level");// Next level butt
 const gameLevelText = document.getElementById("game-level-text")// Game level text
 const levelSelect = document.getElementById("level-select")// Level Select 
 const movesText = document.getElementById("moves")// Moves text
+
+
 
 // How to play DOM elements 
 const modal = document.getElementById("myModal");
@@ -44,6 +48,7 @@ window.onclick = function(event) {
     }
 }
 
+movesText.style.color = "green";
 
 
 
@@ -62,6 +67,26 @@ function startLevel() {
     if (level > 6) {
         level = 1;
     }
+
+    // Colours for level 5 and above
+    if(level > 4) {
+        gameLevelText.style.color = "#d6345c";
+    } else { // Makes sure the number colour goes back to white if below level 5
+        gameLevelText.style.color ="white";
+    }
+
+
+
+    // Colours for level 2 and below
+    if(level < 3) {
+        gameLevelText.style.color = "green"; 
+    }
+
+    // Colours that = level 3 and 4 will have yellow text
+    if(level === 3 || level === 4) {
+        gameLevelText.style.color = "#e8cf37";
+    }
+    
 
     // Set's the grid size depending on what level it is on
    const [cols, rows] = levels[level - 1];
@@ -123,6 +148,7 @@ function flipCard(card) {
             setTimeout(checkMatch, 500);
         }
     }
+   
 }
 
 // Function to check if cards match
@@ -179,7 +205,8 @@ function levelSelector () {
 
 // Tracks moves for each pair of cards flipped
 function updateMoves() {
-    movesText.innerText = `${moves}`;
+    movesText.innerText = ` ${moves}`;
+    
 }
 
 
