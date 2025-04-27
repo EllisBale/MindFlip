@@ -129,11 +129,19 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 ## 4. Features
 
-### Whole site
+### Home page 
 
 #### **Nav bar**
 
-The navbar is simple and has 1 link on the navbar for the "How to play" page which is located on the right. The website logo is to the left of the navbar and has a animation added with CSS that rotates the logo 360 degrees when hovered over. The rotation of the logo goes well with the website name which is "Mind Flip". I used Boostrap for the navbar container and a svg design for the background.
+- The navbar was made with bootstrap to save time coding instead of adding flex in CSS. 
+
+- Contains a modal top left which can open when clicking on it. This contains game instructions to help the user to understand on how to play the game.
+
+- Contains the websites logo in the top left.
+
+- Background of navbar as a SVG design from [svgbackgrounds.com](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/).
+
+
 
 <details>
 
