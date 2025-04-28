@@ -335,6 +335,72 @@ I noticed when I was playing, the matching cards would work and be hidden but th
 
 </details>
 
+<br>
+<details> 
+
+<summary> Issues with grid layout </summary>
+
+When resizing in chrome dev tools, the grid would be too big for smaller screen sizes causing layout issues. I realised that the grid template column was set to 100px, I fixed this by removing the 100px and adding in "1fr" which shrinks or grows automatically making it more responsive. In the CSS file I changed the gameboard class and added in grid-template-columns to repeat(4, 1fr). I made the card class have a aspect-ratio of 1/1 which makes the width and height the same.
+
+
+**Before:**
+
+  JS: 
+
+`  const [cols, rows] = levels[level - 1];
+   const totalCards = cols * rows;
+   const numPair = totalCards / 2;
+   gameBoard.style.gridTemplateColumns = `repeat(${cols}, 100px)`;
+   let selectedImages = images.slice(0, numPair);
+   let cards = [...selectedImages, ...selectedImages];`
+
+    CSS: 
+
+    `.card {
+
+    width: 100px;
+    height: 100px;
+    background-color: #D5B59A;
+    display: flex;
+    align-items: center; }`
+
+
+
+
+  **Fix:**
+
+
+  JS: 
+
+  ` const [cols, rows] = levels[level - 1];
+   const totalCards = cols * rows;
+   const numPair = totalCards / 2;
+   gameBoard.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+   let selectedImages = images.slice(0, numPair);
+   let cards = [...selectedImages, ...selectedImages];`
+
+   CSS:
+
+    `.card {
+    aspect-ratio: 1/1;
+    width: 100%;  
+    width: 100px;
+    height: 100px;
+    background-color: #D5B59A;
+    display: flex;
+    align-items: center; } 
+    
+    .game-board {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+   margin-top: 20px;  
+   grid-template-columns: repeat(4, 1fr);
+   max-width: 600px;
+   margin: 0 auto;
+}`
+
+</details>
 
 ### Testing User Stories
 
