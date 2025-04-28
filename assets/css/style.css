@@ -279,4 +279,22 @@ footer {
 
 
 
+@media (max-width: 768px) {
+    .game-board {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .game-board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
     
