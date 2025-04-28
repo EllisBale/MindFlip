@@ -291,7 +291,7 @@ Chrome - This is the browser I used to view my website during development.
 <details>
 
 <summary> Images not showing up from my array </summary>
-
+<br>
 I figured out the problem was to do with my images file path and simply forgot to add "assets" before "images/"/
 
 **Before:**
@@ -310,7 +310,7 @@ I figured out the problem was to do with my images file path and simply forgot t
 <details>
 
 <summary> Unmatching cards not flipping back </summary>
-
+<br>
 I noticed when I was playing, the matching cards would work and be hidden but the unmatching cards would just stay flipped over and not turn back. I fixed this by having a look at my else statement in my checkMatch function and found a spelling mistake which I corrected.
 
 **Before:**
@@ -339,7 +339,7 @@ I noticed when I was playing, the matching cards would work and be hidden but th
 <details> 
 
 <summary> Issues with grid layout </summary>
-
+<br>
 When resizing in chrome dev tools, the grid would be too big for smaller screen sizes causing layout issues. I realised that the grid template column was set to 100px, I fixed this by removing the 100px and adding in "1fr" which shrinks or grows automatically making it more responsive. In the CSS file I changed the gameboard class and added in grid-template-columns to repeat(4, 1fr). I made the card class have a aspect-ratio of 1/1 which makes the width and height the same.
 
 
@@ -401,6 +401,34 @@ When resizing in chrome dev tools, the grid would be too big for smaller screen 
 }`
 
 </details>
+<br>
+<details> 
+
+<summary> Grid issues on screens widths 768px and below </summary>
+<br>
+
+I was having issues with the gameboard not being in the center of the page. The cards and gameboard would stay to the left when using chrome dev tools and the right would have more space. I fixed this by adding media queries for these screen sizes to fix the positioning.
+
+**Fix**
+
+`@media (max-width: 768px) {
+    .game-board {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 100%;
+    }
+}`
+
+`@media (max-width: 480px) {
+    .game-board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}` 
+
+</details>
+
+
 
 ### Testing User Stories
 
