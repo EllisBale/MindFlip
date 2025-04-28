@@ -92,7 +92,7 @@ function startLevel() {
    const [cols, rows] = levels[level - 1];
    const totalCards = cols * rows;
    const numPair = totalCards / 2;
-   gameBoard.style.gridTemplateColumns = `repeat(${cols}, 100px)`;
+   gameBoard.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
    let selectedImages = images.slice(0, numPair);
    let cards = [...selectedImages, ...selectedImages];
 

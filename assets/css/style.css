@@ -156,12 +156,14 @@ h2 {
     justify-content: center;
     gap: 10px;
    margin-top: 20px;  
+   grid-template-columns: repeat(4, 1fr);
+   max-width: 600px;
+   margin: 0 auto;
 }
 
 .card {
-
-    width: 100px;
-    height: 100px;
+    aspect-ratio: 1/1;
+    width: 100%;
     background-color: #D5B59A;
     display: flex;
     align-items: center;
@@ -276,10 +278,5 @@ footer {
 }
 
 
-/* Medium devices (tablets, 768px and below) */
-@media screen and (max-width: 768px) {
-
 
     
-
-}
