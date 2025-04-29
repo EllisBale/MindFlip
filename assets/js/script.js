@@ -112,6 +112,12 @@ function startLevel() {
     cards.forEach((imagePath, index) => { // Calls a function for each item
         const card = document.createElement("div");
         card.classList.add("card");
+       if(level === 1) { // This adds a class to gameboard level 1
+            gameBoard.classList.add("small");
+        } else {
+            gameBoard.classList.remove("small");
+        } 
+
         card.innerHTML = `<i class="fa-solid fa-question fa-lg bounce-on-hover"></i>`;
         card.dataset.index = index;
         card.dataset.imagePath = imagePath;

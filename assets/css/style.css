@@ -161,6 +161,12 @@ h2 {
    margin: 0 auto;
 }
 
+/* Class added through JS that adds to level 1 gameboard  */
+.game-board.small {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
 .card {
     aspect-ratio: 1/1;
     width: 100%;
@@ -173,6 +179,8 @@ h2 {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .card:hover {
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); 
