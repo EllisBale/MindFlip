@@ -27,8 +27,6 @@ const gameLevelText = document.getElementById("game-level-text")// Game level te
 const levelSelect = document.getElementById("level-select")// Level Select 
 const movesText = document.getElementById("moves")// Moves text
 
-
-
 // How to play DOM elements 
 const modal = document.getElementById("myModal");
 const trigger = document.getElementById("howtoplay");
@@ -49,7 +47,6 @@ window.onclick = function(event) {
 }
 
 movesText.style.color = "green";
-
 
 
 // Functions
@@ -104,9 +101,7 @@ function startLevel() {
     moves = 0;
     updateMoves(); // Moves reset after each level
 
-
-
-
+    
     // Creates the game board
 
     cards.forEach((imagePath, index) => { // Calls a function for each item
