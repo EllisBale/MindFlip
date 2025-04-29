@@ -56,9 +56,12 @@ movesText.style.color = "green";
 
 function startLevel() {
 
+    nextLevelButton.classList.remove("ready");
+    nextLevelButton.disabled = true;
+
     gameBoard.innerHTML = "";
     result.innerText = "";
-    nextLevelButton.classList.add("hidden"); 
+    
 
     // This makes it reset back to 1 when 6 is completed
     if (level > 6) {
@@ -101,7 +104,7 @@ function startLevel() {
     moves = 0;
     updateMoves(); // Moves reset after each level
 
-    
+
     // Creates the game board
 
     cards.forEach((imagePath, index) => { // Calls a function for each item
@@ -149,6 +152,8 @@ function flipCard(card) {
             setTimeout(checkMatch, 500);
         }
     }
+
+
    
 }
 
@@ -171,6 +176,9 @@ function checkMatch() {
             }  else {
                 result.innerText = "Level complete!";
                 nextLevelButton.classList.remove("hidden");
+                nextLevelButton.classList.add("ready");
+                nextLevelButton.disabled = false;
+               
 
             }
         }
