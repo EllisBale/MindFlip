@@ -29,15 +29,99 @@ The aim of this website is to have fun playing a game made with javascript. The 
 
 ## User stories
 
-### User 
 
-**User story 1: :**
+### User story 1:
+
+As a user a want smooth transitions when I flip the cards.
+
+**Acceptance criteria:** 
+
+- [x] Cards flipped have smooth transition.
+- [x] Cards turn back when there is a incorrect match.
+
+**Tasks:** 
+
+- [x] Use CSS for the cards animation.
+- [x] Use JavaScript to create a flip card function.
 
 
 
-**User story 2: :**
+### User story 2:
+
+As a user I would like to have harder and more levels so I don't get bored of the same level.
+
+**Acceptance criteria**
+
+- [x] Multiple levels.
+- [x] Levels get harder to complete.
+
+**Tasks**
+
+- [x] Create different levels using JavaScript.
+- [x] Make sure the user knows which level they are on.
 
 
+### User story 3:
+
+As a user I want a next level button so that I can move onto different levels.
+
+
+**Acceptance criteria:**
+
+- [x] A button that enables the player to move onto the other levels.
+
+- [x] The button is placed at the bottom of the grid.
+
+**Tasks:**
+
+- [x] Using JavaScript make it so the button moves onto the next level.
+
+- [x] Using CSS or bootstrap make sure the button is placed at the bottom of the grid template.
+
+### User story 4:
+
+As a user I want to be able to replay the same level so that I can improve my moves.
+
+**Acceptance criteria** 
+
+- [x] Add a reset level button that allows the user to play the level again.
+- [x] Styling is similar to the other buttons and is adaptive to different screen sizes.
+
+**Tasks** 
+
+- [x] Using CSS and HTML create a reset level button that has similar styling to the other game buttons.
+- [x] Use JavaScript to reset the game level and randomize the cards again.
+
+### User story 5:
+
+As a user that uses a smaller device, I would like to play the game without any issues.
+
+
+**Acceptance Criteria:**
+
+- [x] The grid template adapts to different screen sizes.
+
+**Tasks:**
+
+- [x] Using CSS adapt different elements to different screen sizes.
+
+- [x] Make sure the games performance on smaller screen sizes is optimal.
+
+
+### User story 6:
+
+As a user I want to know how many moves I am on so that I can improve on it the next time I play.
+
+**Acceptance criteria** 
+
+- [x] Have a moves element of the page that gives you a up to data moves the player is on.
+- [x] Make the moves element adapt to different screen sizes.
+
+**Tasks**
+
+- [x] Add the button to the top of the card game container using html and CSS.
+- [x] Update the moves counter using JavaScript so that the player has a up to data number.
+- [x] Add styling to the element and make it similar to the other buttons and elements on the page.
 
 ### Research
 
@@ -451,7 +535,36 @@ When playing I noticed that the images would be the same for each level such as 
 
 #### Interactables
 
+- Card flips
+    - Card flips
+    - Cards unmatch and flip back
+    - Cards match and are hidden
+    - Matching all pairs turns next level button to green and functional
+    - User gets message when matching all pairs
 
+- Reset button
+    - Resets game by reshuffling images
+    - Resets moves number back to 0
+    - Changes next level button back to red and non-functional by starting level again
+
+- How to play modal
+    - Modal pops up when clicked on
+    - Modal closes when user clicks of it or presses X
+    - Includes game instuctions
+
+
+- Next level button
+    - Button colour is red when user hasn't completed level
+    - Button functionality doesn't work when user hasn't completed level
+    - Changes colour to green when user completes level
+    - Function added when level complete
+    - When level is completed, sends user to next level 
+
+
+
+    ### Manual Testing file
+
+    ### [Testing file](./docs/testing/functionalTesting.md)
 
 
 
