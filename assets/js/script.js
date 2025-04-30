@@ -116,6 +116,20 @@ function startLevel() {
             gameBoard.classList.remove("small");
         } 
 
+        if(level === 3 || level === 4) { // Changes max grid width to 3,4 and 5
+            gameBoard.classList.add("mid-grid");
+        } else {
+            gameBoard.classList.remove("mid-grid");
+        }
+
+        if(level === 5 || level === 6) {
+            gameBoard.classList.add("late-grid");
+        } else {
+            gameBoard.classList.remove("late-grid");
+        }
+
+
+
         card.innerHTML = `<i class="fa-solid fa-question fa-lg bounce-on-hover"></i>`;
         card.dataset.index = index;
         card.dataset.imagePath = imagePath;
