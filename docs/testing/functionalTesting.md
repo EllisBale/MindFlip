@@ -1,13 +1,38 @@
 # Manual Testing
 
 
-### Functionality
+## Functionality
 
 
 Use this to make table https://www.tablesgenerator.com/markdown_tables
 
 
+### Interactables and functionality 
 
+- Card flips
+    - Card flips
+    - Cards unmatch and flip back
+    - Cards match and are hidden
+    - Matching all pairs turns next level button to green and functional
+    - User gets message when matching all pairs
+
+- Reset button
+    - Resets game by reshuffling images
+    - Resets moves number back to 0
+    - Changes next level button back to red and non-functional by starting level again
+
+- How to play modal
+    - Modal pops up when clicked on
+    - Modal closes when user clicks of it or presses X
+    - Includes game instuctions
+
+
+- Next level button
+    - Button colour is red when user hasn't completed level
+    - Button functionality doesn't work when user hasn't completed level
+    - Changes colour to green when user completes level
+    - Function added when level complete
+    - When level is completed, sends user to next level 
 
 Card Flips (feature) Expected Result: Card flips when clicked on.  Status: PASS      Description: Test: Click on a card to make sure it flips over and adds a ".flipped" class to html from javascript. Steps: 1. Use chrome devtools and use "select element" and hover mouse over flipped card.  2. Check the card div for a class of "flipped". 3. When both cards are flipped and are unmatched, check card visuals for the card to go back to its original state. 
 
@@ -35,15 +60,13 @@ Level Select (feature) Expected Result:  Clicking on the button will give you op
 
 
 
-Reset Level (feature) Expected Result: Current level resets and shuffles again as well as resetting the moves text back to 0.  Status: PASS   Description: Test: Clicking the reset button resets the level by starting the game again. Moves are reset to 0 and cards are reshuffled. 1. Click on 1 card to flip it. 2. Click the reset button to see if the card turns back. 3. Check the same card by flipping it to see if the image is the same (reset twice if the same image reshuffled picked). 4. Check the moves resets to 0 when flipping two cards.
-
+Reset Level (feature) Expected Result: Current level resets and shuffles again as well as resetting the moves text back to 0.  Status: PASS   Description: Test: Clicking the reset button resets level by starting game again. Moves are reset to 0 and cards are reshuffled. 1. Click on 1 card to flip it. 2. Click the reset button to see if the card turns back. 3. Check the same card by flipping it to see if the image is the same (reset twice if the same image reshuffled picked). 4. Check the moves resets to 0 when flipping two cards.
 
 
 Max level is complete and sends user to level 1 (feature) Expected Result: Message appears and sends the user back to level 1.  Status: PASS     Description:  Test: Message pops up and sends the user back to level 1 when all cards are matched in level 6. Steps: 1. Click the select level button. 2. Click level 6. 3. Match all cards on board. 4. When complete, look at the message underneath the board. 5. Check to see if level goes back to level 1.
 
 
-
-How to play (feature) Expected Result: When clicked on it opens up a modal explaining how to play the game.  Status:      Description: 
+How to play (feature) Expected Result: When clicked on it opens up a modal explaining how to play the game.  Status: PASS    Description: Test:  Click on "how to play" on the navbar to open instructions modal. Steps: 1. Click on "how to play" on the navabar. 2. Close the modal by clicking outside the modal or on the X.
 
 
 
