@@ -116,14 +116,14 @@ function startLevel() {
             gameBoard.classList.remove("small");
         } 
 
-        if(level === 3 || level === 4) { // Changes max grid width to 3,4 and 5
+        if(level === 3 || level === 4) { // Changes max grid width to 3 and 4
             gameBoard.classList.add("mid-grid");
         } else {
             gameBoard.classList.remove("mid-grid");
         }
 
-        if(level === 5 || level === 6) {
-            gameBoard.classList.add("late-grid");
+        if(level === 5 || level === 6) { // 
+            gameBoard.classList.add("late-grid"); // Changes max grid width to 5 and 6
         } else {
             gameBoard.classList.remove("late-grid");
         }
