@@ -28,10 +28,10 @@ Moves text number changes on how many pair of cards are clicked (feature) Expect
 
 
 
-Next level button shows up when you complete level (feature) Expected Result: Button shows up to go to next level.  Status:      Description: 
+Next level button turns green and is activated when you complete level (feature) Expected Result: Button is activated and turns green from red and allows user to go to next level.  Status: PASS     Description: Test: Click the button to see if it works when button turns green and moves onto next level. Steps: 1. Click on red button to see if it goes to next level. 2. When the red button has no current functionality complete a level by matching all cards. 3. Check the button after matching all cards to see if it turns green with a pulsing animation by looking at visuals or by checking button class adds "ready". 4. Click the button to see if it goes to the next level.
 
 
-Level Select (feature) Expected Result:  Clicking on the button will give you options to select and go onto other levels   Status:      Description: 
+Level Select (feature) Expected Result:  Clicking on the button will give you options to select and go onto other levels   Status:      Description: Test: The "level-select" button opens up level options that has levels 1 to 6 which when clicking level sends you to that level. Steps: 1. Click on the "level-select" button. 2. Select any level by clicking on it. 3. See if the grid changes and the "game-level-text" is updated to that level.
 
 
 
