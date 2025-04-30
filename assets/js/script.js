@@ -24,6 +24,7 @@ const result = document.getElementById("result");// Result text
 const resetButton = document.getElementById("reset-level"); // Resets current level
 const nextLevelButton = document.getElementById("next-level");// Next level button
 const gameLevelText = document.getElementById("game-level-text")// Game level text
+const levelNumber = document.getElementById("level-number"); // Level colour
 const levelSelect = document.getElementById("level-select")// Level Select 
 const movesText = document.getElementById("moves")// Moves text
 
@@ -70,21 +71,19 @@ function startLevel() {
 
     // Colours for level 5 and above
     if(level > 4) {
-        gameLevelText.style.color = "#d6345c";
+        levelNumber.style.color = "#d6345c";
     } else { // Makes sure the number colour goes back to white if below level 5
-        gameLevelText.style.color ="white";
+        levelNumber.style.color ="white";
     }
-
-
 
     // Colours for level 2 and below
     if(level < 3) {
-        gameLevelText.style.color = "green"; 
+        levelNumber.style.color = "green"; 
     }
 
     // Colours that = level 3 and 4 will have yellow text
     if(level === 3 || level === 4) {
-        gameLevelText.style.color = "#e8cf37";
+        levelNumber.style.color = "#e8cf37";
     }
     
 
@@ -137,7 +136,7 @@ function startLevel() {
         gameBoard.appendChild(card);
     })
 
-    gameLevelText.innerText = `Level: ${level}`; // Changes level number text based on what level
+    document.getElementById("level-number").innerText = level;  // Changes level number text based on what level
      
 }
 

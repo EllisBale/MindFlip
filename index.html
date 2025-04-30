@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
+    <title>Mind Flip</title>
 
     <!-- Font Awesome-->
     <script src="https://kit.fontawesome.com/98a92d70f6.js" crossorigin="anonymous"></script>
@@ -14,11 +14,12 @@
     <!-- CSS stylesheet -->
      <link href="assets/css/style.css" rel="stylesheet">
     
-</head>
-<body class="d-flex flex-column min-vh-100">
+ </head>
+
+ <body class="d-flex flex-column min-vh-100">
 
     <!-- Header -->
-     <header> 
+    <header> 
     
         <!-- Navbar -->
        <nav class="navbar navbar-expand-lg navbar-dark"> 
@@ -39,11 +40,11 @@
             <span class="close">x</span>
             <div class="row">
                 <!-- Game instructions -->
-            <h2>Instructions</h2>
-            <p><strong>🏆 Goal:</strong> The Goal Of The Game Is To Match All Pairs To Complete The Level!</p>
-            <p><strong>🖱️ How To Flip Cards:</strong> Click On Two Cards To Flip Them Over And Try To Get A Match.</p>
-            <p><strong>🎯 Matching Cards:</strong> If The Cards Match, They Will Be Removed From The Game.</p>
-            <p><strong>❌ Mismatching Cards:</strong> If Both Cards Are Flipped And Not Matched, Then They Will Be Flipped Back.</p>
+             <h2>Instructions</h2>
+             <p><strong>🏆 Goal:</strong> The Goal Of The Game Is To Match All Pairs To Complete The Level!</p>
+             <p><strong>🖱️ How To Flip Cards:</strong> Click On Two Cards To Flip Them Over And Try To Get A Match.</p>
+             <p><strong>🎯 Matching Cards:</strong> If The Cards Match, They Will Be Removed From The Game.</p>
+             <p><strong>❌ Mismatching Cards:</strong> If Both Cards Are Flipped And Not Matched, Then They Will Be Flipped Back.</p>
             </div>
         </div>
      </div>
@@ -58,17 +59,17 @@
 
         <div class="container pt-3 text-center">
             <div class="row align-items-center justify-content-center">
-            <div class="col-lg-1 col-md-3 col-sm-5 col-6">
-                <p class="text-center" id="game-level-text"> Level: 1  </p>
+                <div class="col-lg-1 col-md-3 col-sm-5 col-6">
+                    <p class="text-center" id="game-level-text"> Level: <span id="level-number"> 1 </span></p>
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-5 col-6">
+                    <p id="moves-text"> Moves:<span id="moves"> 1 </span> </p>
+                </div>
             </div>
-            <div class="col-lg-1 col-md-3 col-sm-5 col-6">
-            <p id="moves-text"> Moves:<span id="moves"> 1 </span> </p>
-        </div>
-        </div>
         </div>
         
         
-        <!-- Game boared -->
+        <!-- Game board -->
        
         <div class="game-board px-2"></div>
 
@@ -94,11 +95,9 @@
             </div>   
         </div>
 
-
-
     </main>
 
-
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -111,11 +110,11 @@
         </div>
     </footer> 
     
- <!-- JS -->
-<script src="assets/js/script.js"></script>
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
 
- <!-- Bootstrap JS -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-</body>
+ </body>
 </html>
