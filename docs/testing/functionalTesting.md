@@ -24,7 +24,7 @@ Level number tells the user what level they are on and changes colour depending 
 
 
 
-Moves text number changes on how many pair of cards are clicked (feature) Expected Result: Moves text updates with each pair the user clicks on.  Status:      Description:
+Moves text number changes on how many pair of cards are clicked (feature) Expected Result: Moves text updates with each pair the user clicks on.  Status: PASS     Description: Test: Flip two cards for the "moves-text" to add 1. Steps: 1. Click two cards to flip them over. 2. Check "moves-text" to see if the number adds 1. 
 
 
 
