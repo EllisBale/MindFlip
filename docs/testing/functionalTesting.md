@@ -31,16 +31,15 @@ Moves text number changes on how many pair of cards are clicked (feature) Expect
 Next level button turns green and is activated when you complete level (feature) Expected Result: Button is activated and turns green from red and allows user to go to next level.  Status: PASS     Description: Test: Click the button to see if it works when button turns green and moves onto next level. Steps: 1. Click on red button to see if it goes to next level. 2. When the red button has no current functionality complete a level by matching all cards. 3. Check the button after matching all cards to see if it turns green with a pulsing animation by looking at visuals or by checking button class adds "ready". 4. Click the button to see if it goes to the next level.
 
 
-Level Select (feature) Expected Result:  Clicking on the button will give you options to select and go onto other levels   Status:      Description: Test: The "level-select" button opens up level options that has levels 1 to 6 which when clicking level sends you to that level. Steps: 1. Click on the "level-select" button. 2. Select any level by clicking on it. 3. See if the grid changes and the "game-level-text" is updated to that level.
+Level Select (feature) Expected Result:  Clicking on the button will give you options to select and go onto other levels   Status: PASS     Description: Test: The "level-select" button opens up level options that has levels 1 to 6 which when clicking level sends you to that level. Steps: 1. Click on the "level-select" button. 2. Select any level by clicking on it. 3. See if the grid changes and the "game-level-text" is updated to that level.
 
 
 
-Reset Level (feature) Expected Result: Current level resets and shuffles again as well as resetting the moves text back to 1.  Status:      Description: 
+Reset Level (feature) Expected Result: Current level resets and shuffles again as well as resetting the moves text back to 0.  Status: PASS   Description: Test: Clicking the reset button resets the level by starting the game again. Moves are reset to 0 and cards are reshuffled. 1. Click on 1 card to flip it. 2. Click the reset button to see if the card turns back. 3. Check the same card by flipping it to see if the image is the same (reset twice if the same image reshuffled picked). 4. Check the moves resets to 0 when flipping two cards.
 
 
 
-Max level is complete and sends user to level 1 (feature) Expected Result: Sends the user back to level 1.  Status:      Description: 
-
+Max level is complete and sends user to level 1 (feature) Expected Result: Message appears and sends the user back to level 1.  Status: PASS     Description:  Test: Message pops up and sends the user back to level 1 when all cards are matched in level 6. Steps: 1. Click the select level button. 2. Click level 6. 3. Match all cards on board. 4. When complete, look at the message underneath the board. 5. Check to see if level goes back to level 1.
 
 
 
