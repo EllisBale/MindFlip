@@ -9,18 +9,18 @@ Use this to make table https://www.tablesgenerator.com/markdown_tables
 
 
 
-Card Flips (feature) Expected Result: Card flips when clicked on.  Status: Pass      Description: Test: Click on a card to make sure it flips over and adds a ".flipped" class to html from javascript. Steps: 1. Use chrome devtools and use "select element" and hover mouse over flipped card.  2. Check the card div for a class of "flipped". 3. When both cards are flipped and are unmatched, check card visuals for the card to go back to its original state. 
+Card Flips (feature) Expected Result: Card flips when clicked on.  Status: PASS      Description: Test: Click on a card to make sure it flips over and adds a ".flipped" class to html from javascript. Steps: 1. Use chrome devtools and use "select element" and hover mouse over flipped card.  2. Check the card div for a class of "flipped". 3. When both cards are flipped and are unmatched, check card visuals for the card to go back to its original state. 
 
 
 
-Card unmatched (feature) Expected Result: Cards turn back around.  Status: Pass     Description: Test: Unmatched cards remove card1 and card2 class "flipped" Steps: 1. Open Chrome devtools and "select element". 2. Check the elements on the right of devtools to see if both unmatched cards remove the "flipped" class from both card divs when clicking on 2 unmatched cards.
+Card unmatched (feature) Expected Result: Cards turn back around.  Status: PASS    Description: Test: Unmatched cards remove card1 and card2 class "flipped" Steps: 1. Open Chrome devtools and "select element". 2. Check the elements on the right of devtools to see if both unmatched cards remove the "flipped" class from both card divs when clicking on 2 unmatched cards.
 
 
 
-Card Match (feature) Expected Result: Cards are removed and hidden when matched.  Status: Pass     Description: Test: Both cards are flipped and match each other which then adds the class "hidden" to both matching cards which removes it from the gameboard. Steps: 1. Open Chrome devtools and "select element". 2. Click on 2 cards that match.  3. Check the devtools elements and view the 2 cards that have the class "hidden". 4. Check the cards on the website to see if they are not visable.
+Card Match (feature) Expected Result: Cards are removed and hidden when matched.  Status: PASS     Description: Test: Both cards are flipped and match each other which then adds the class "hidden" to both matching cards which removes it from the gameboard. Steps: 1. Open Chrome devtools and "select element". 2. Click on 2 cards that match.  3. Check the devtools elements and view the 2 cards that have the class "hidden". 4. Check the cards on the website to see if they are not visable.
 
 
-Level number tells the user what level they are on and changes colour depending on what level (feature)  Expected Result: Level text updates depending on what level the user is on and changes colour on every 2 levels.  Status:      Description:
+Level number tells the user what level they are on and changes colour depending on what level (feature)  Expected Result: Level text updates depending on what level the user is on and changes colour on every 2 levels.  Status: PASS   Description: Test: Select a level and see if "level-number" changes colour depending on the level difficulty. Steps: 1. Click the "level-select" button. 2. Click level 1 and 2 to see if "level-number" is green. 3. click "level-select" button and click levels 3 and 4 to see if "level-number" is yellow. 4. click "level-select" button and click level 5 and 6 to see if "level-number" is red.
 
 
 
