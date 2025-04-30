@@ -69,20 +69,18 @@ function startLevel() {
         level = 1;
     }
 
-    // Colours for level 5 and above
-    if(level > 4) {
+    
+    if(level > 4) { // Colours for level 5 and above
         levelNumber.style.color = "#d6345c";
     } else { // Makes sure the number colour goes back to white if below level 5
         levelNumber.style.color ="white";
     }
 
-    // Colours for level 2 and below
-    if(level < 3) {
+    if(level < 3) { // Colours for level 2 and belows
         levelNumber.style.color = "green"; 
     }
 
-    // Colours that = level 3 and 4 will have yellow text
-    if(level === 3 || level === 4) {
+    if(level === 3 || level === 4) { // Colours that = level 3 and 4 will have yellow text
         levelNumber.style.color = "#e8cf37";
     }
     
@@ -92,8 +90,11 @@ function startLevel() {
    const totalCards = cols * rows;
    const numPair = totalCards / 2;
    gameBoard.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
-   let selectedImages = images.slice(0, numPair);
-   let cards = [...selectedImages, ...selectedImages];
+
+   let shuffleImages = [...images]; //Shuffles the images from the array
+   shuffle(shuffleImages);
+   let selectedImages = shuffleImages.slice(0, numPair);
+   let cards = [...selectedImages, ...selectedImages]; //Creates a new array
 
     shuffle(cards);
     flippedCards = [];
@@ -126,8 +127,6 @@ function startLevel() {
         } else {
             gameBoard.classList.remove("late-grid");
         }
-
-
 
         card.innerHTML = `<i class="fa-solid fa-question fa-lg bounce-on-hover"></i>`;
         card.dataset.index = index;

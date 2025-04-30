@@ -287,7 +287,7 @@ I tested different devices through Google Chrome Developer Tools. This tool allo
 Chrome - This is the browser I used to view my website during development.
 
 ### Bugs during development and fixes
-<br>
+
 <details>
 
 <summary> Images not showing up from my array </summary>
@@ -427,8 +427,25 @@ I was having issues with the gameboard not being in the center of the page. The 
 }` 
 
 </details>
+<br>
+
+<details>
+
+<summary> Images not randomizing </summary>
+<br>
+
+When playing I noticed that the images would be the same for each level such as when playing level 1 and 2. I noticed in my images array that the order of the images they start in would be in the same level as the game. For example, the fox and bear would all ways be at the start of level 1. To fix this I decided to add a shuffle to the images.
+
+**Fix**
+
+`let shuffleImages = [...images];
+   shuffle(shuffleImages);
+   let selectedImages = shuffleImages.slice(0, numPair);
+   let cards = [...selectedImages, ...selectedImages];`
 
 
+ </details>
+<br>
 
 ### Testing User Stories
 

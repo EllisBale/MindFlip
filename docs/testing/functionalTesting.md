@@ -20,7 +20,7 @@ Card unmatched (feature) Expected Result: Cards turn back around.  Status: Pass 
 Card Match (feature) Expected Result: Cards are removed and hidden when matched.  Status: Pass     Description: Test: Both cards are flipped and match each other which then adds the class "hidden" to both matching cards which removes it from the gameboard. Steps: 1. Open Chrome devtools and "select element". 2. Click on 2 cards that match.  3. Check the devtools elements and view the 2 cards that have the class "hidden". 4. Check the cards on the website to see if they are not visable.
 
 
-Level Text tells the user what level they are on (feature)  Expected Result: Level text updates depending on what level the user is on.  Status:      Description:
+Level number tells the user what level they are on and changes colour depending on what level (feature)  Expected Result: Level text updates depending on what level the user is on and changes colour on every 2 levels.  Status:      Description:
 
 
 
