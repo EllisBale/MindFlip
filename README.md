@@ -681,6 +681,8 @@ SVG design (https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns
 
 Audio volume control (https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/range)
 
+Background music (https://pixabay.com/music/beautiful-plays-just-relax-11157/)
+
 
 **Images used**
 

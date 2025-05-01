@@ -33,6 +33,11 @@ const backgroundMusic = new Audio("assets/music/gamemusic.mp3");
 backgroundMusic.loop = true;
 let musicStart = false;
 
+
+// Mute/unmute button
+const muteButton = document.getElementById("mute-button");
+let isMuted = false;
+
 // How to play DOM elements 
 const modal = document.getElementById("myModal");
 const trigger = document.getElementById("howtoplay");
@@ -254,7 +259,23 @@ function resetLevel() {
     startLevel();
 };
 
+
 resetButton.addEventListener("click", resetLevel);
+
+
+// Mute button function
+function toggleMute() {
+    isMuted = !isMuted;
+    backgroundMusic.muted = isMuted;
+
+    if (isMuted) {
+        muteButton.innerHTML = `<i class="fa-solid fa-volume-xmark fa-lg"></i>`;
+    } else {
+        muteButton.innerHTML = `<i class="fa-solid fa-volume-high fa-lg"></i>`;
+    }    
+};
+
+muteButton.addEventListener("click", toggleMute);
 
 
 function startNextLevel() {   
