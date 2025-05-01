@@ -211,16 +211,15 @@ h2 {
 }
 
 
-.card.flipped {
-    border: none;
-    transform: rotateY(180deg);
-}
-
-
 .card:hover {
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); 
     transform: scale(1.05);
     background-color: #F4AAB3; 
+}
+
+.card.flipped {
+    border: none;
+    transform: rotateY(180deg);
 }
 
 
@@ -256,8 +255,7 @@ h2 {
 
 
 
-.control-button:hover { /* For reset and select level button  */
-    
+.control-button:hover, .ready:hover { /* For reset, select level button and ready class */
     transform: scale(1.05);
 }
 
