@@ -40,6 +40,7 @@ body {
     background-size: cover;
     z-index: 1000;
     overflow: hidden;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .navbar a {
@@ -131,14 +132,17 @@ strong {
 h1 {
     font-family:  "Rubik Mono One", monospace;
     margin-top: 3.5rem;
+    letter-spacing: 2px;
+    color: #fff;
 }
 
 h2 {
     font-family:  "Rubik Mono One", monospace;
 }
 
+/* Volume control */
 
-.mute-button {
+.volume-control, .mute-button {
     background-color: #2A2A2A;;
     border: none;
     border-radius: 10px;
@@ -146,20 +150,19 @@ h2 {
     
 }
 
-.mute-button:hover {
+.mute-button:hover, .volume-control:hover {
    background-color: #444242;
    transition: 0.5s;
 }
 
-.volume-control {
-    background-color: #2A2A2A;
-    border-radius: 10px;
-    
+/* Level & Moves */
+
+#game-level-text {
+    font-family: "DynaPuff", system-ui;  
 }
 
-.volume-control:hover {
-    background-color: #444242;
-    transition: 0.5s;
+#moves-text {
+    font-family: "DynaPuff", system-ui;
 }
 
 
@@ -167,8 +170,7 @@ h2 {
 .game-board {
     display: grid;
     justify-content: center;
-    gap: 10px;
-   margin-top: 20px;  
+    gap: 10px; 
    grid-template-columns: repeat(4, 1fr);
    max-width: 600px;
    margin: 0 auto;
@@ -181,7 +183,7 @@ h2 {
 }
 
 .game-board.mid-grid { /*Levels 3 and 4 */
-    max-width: 450px;
+    max-width: 430px;
     margin: 0 auto;
     
 }
@@ -191,8 +193,9 @@ h2 {
     gap: 8px;
 }
 
+/* Cards */
 
-.card {
+ .card {
     aspect-ratio: 1/1;
     width: 100%;
     background-color: #D5B59A;
@@ -208,25 +211,23 @@ h2 {
 }
 
 
+.card.flipped {
+    border: none;
+    transform: rotateY(180deg);
+}
+
 
 .card:hover {
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); 
     transform: scale(1.05);
-    background-color: #F4AAB3;
-   
+    background-color: #F4AAB3; 
 }
 
-/* Hidden class for cards */
-.hidden {
+
+.hidden { /* Hidden class for cards */
     visibility: hidden;   
 }
 
-
-.card.flipped {
-
-    border: none;
-    transform: rotateY(180deg);
-}
 
 /* Game buttons */
 
@@ -241,8 +242,9 @@ h2 {
     font-weight: 600;
     border: 0px;
     border-radius: 3px;
-    padding: 0.3rem;  
+    padding: 0.6rem 1rem;  
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .next-level {
@@ -252,6 +254,13 @@ h2 {
     cursor: not-allowed;
 }
 
+
+
+.control-button:hover { /* For reset and select level button  */
+    
+    transform: scale(1.05);
+}
+
 .ready { 
     background-color: green;
 }
@@ -259,15 +268,6 @@ h2 {
 
 .next-level.ready {
     animation: pulse 1.5s infinite;
-}
-
-
-#game-level-text {
-    font-family: "DynaPuff", system-ui;  
-}
-
-#moves-text {
-    font-family: "DynaPuff", system-ui;
 }
 
 
@@ -351,6 +351,11 @@ footer {
         visibility: hidden;
     }
 
+    .volume-container {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 
@@ -366,11 +371,13 @@ footer {
         font-weight: 600;
         border: 0px;
         border-radius: 3px;
-        padding: 0.2rem;  
+        padding: 0.1rem;  
         cursor: pointer;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        height: 2rem;
+        width: 5.5rem;    
+        
     }
-
 
     .card {
         width: 100%;
