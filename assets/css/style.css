@@ -137,6 +137,32 @@ h2 {
     font-family:  "Rubik Mono One", monospace;
 }
 
+
+.mute-button {
+    background-color: #2A2A2A;;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+.mute-button:hover {
+   background-color: #444242;
+   transition: 0.5s;
+}
+
+.volume-control {
+    background-color: #2A2A2A;
+    border-radius: 10px;
+    
+}
+
+.volume-control:hover {
+    background-color: #444242;
+    transition: 0.5s;
+}
+
+
 /* Game board grid */
 .game-board {
     display: grid;
@@ -321,7 +347,10 @@ footer {
         max-width: 100%; /* Makes the gameboard centered */
         margin: 0 auto;
     }
-    
+    .volume-control {
+        visibility: hidden;
+    }
+
 }
 
 
