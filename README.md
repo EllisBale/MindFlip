@@ -675,6 +675,40 @@ What I used to shuffle my array (https://www.youtube.com/watch?v=FGAUekwri1Q&ab_
 
 How to play JavaScript modal (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal)
 
+Helped with my coding (https://www.w3schools.com/js/default.asp) and (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+
+**Images used**
+
+- [Cat](https://unsplash.com/photos/a-close-up-of-a-cat-on-a-table-aZHOOdE9bjQ) By Roman Hnydin
+
+- [Penguin](https://unsplash.com/photos/a-penguin-walking-in-the-snow-on-a-beach-UOd9hVAzm5A) By TC Photography
+
+- [Dog](https://unsplash.com/photos/black-dog-m-Doa-GTrUw) By David Lezcano
+
+- [Rabbit](https://unsplash.com/photos/white-rabbit-on-green-grass-u_kMWN-BWyU) By Satyabratasm
+
+- [Giraffe](https://unsplash.com/photos/brown-and-beige-giraffe-NEJcmvLFcws) By Sian Cooper
+
+- [Monkey](https://unsplash.com/photos/a-close-up-of-a-monkey-on-a-tree-branch-yc-KMlo4afE) By Manoj Seenivasan
+
+- [Cow](https://unsplash.com/photos/brown-and-white-cow-on-green-grass-field-during-daytime-LtC0qgqNJJY) By laura adai
+
+- [Bear](https://unsplash.com/photos/brown-bear-near-grass-field-kZ8dyUT0h30) By Jessica Weiller
+
+- [Fox](https://unsplash.com/photos/a-red-fox-poses-staring-directly-into-the-camera-Powgsxla7Es) By Cody Boileau
+
+- [Bird](https://unsplash.com/photos/brown-and-orange-bird-on-brown-tree-branch-3lGi0BXJ1W0) By AARN GIRI
+
+- [Elephant](https://unsplash.com/photos/gray-elephant-walking-beside-green-plants-during-daytime-9hSejnboeTY) By Zoë Reeve
+
+- [Gorilla](https://unsplash.com/photos/a-black-and-white-photo-of-a-monkey-Q4epk-ghLD4) By William Warby
+
+- [Tiger](https://unsplash.com/photos/photo-of-tigers-face-DfKZs6DOrw4) By Ian Robinson
+
+
+
+
 
 ## Acknowledgements
 
