@@ -144,25 +144,24 @@ I took inspiration from the other websites below. I added parts to my website su
 
 I used Balsamiq Wireframes to help structure the wireframes before and during the design of the website. This helped me plan the design of the website by helping me apply the layout and the navigation. Using the software is good for designing layouts on different devices so that I can implement them later on.
 
+
 <details> 
 <summary> Mobile </summary>
 
- <img src="docs/wireframes/mobile.png">
+ <img src="docs/wireframes/mobileupdate.png">
 </details>
 <br>
 <details>
 <summary> Tablet </summary>
 
- <img src="docs/wireframes/tablet.png">
+ <img src="docs/wireframes/tabletupdate.png">
 </details>
 <br>
 <details>
 <summary> Desktop </summary>
 
- <img src="docs/wireframes/desktop .png">
-
+ <img src="docs/wireframes/desktopupdate.png">
 </details>
-
 
 
 
