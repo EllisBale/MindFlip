@@ -9,7 +9,6 @@
 /* Quicksand */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-
 * {
     box-sizing: border-box;
 }
@@ -127,12 +126,6 @@ strong {
     border-radius: 5px;    
    
    
-}
-
- .logo:active {
-    transform: rotate(360deg);
-    transition: 2s;
-    
 }
 
 h1 {

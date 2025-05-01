@@ -28,6 +28,11 @@ const levelNumber = document.getElementById("level-number"); // Level colour
 const levelSelect = document.getElementById("level-select")// Level Select 
 const movesText = document.getElementById("moves")// Moves text
 
+// Game music
+const backgroundMusic = new Audio("assets/music/gamemusic.mp3");
+backgroundMusic.loop = true;
+let musicStart = false;
+
 // How to play DOM elements 
 const modal = document.getElementById("myModal");
 const trigger = document.getElementById("howtoplay");
@@ -48,6 +53,7 @@ window.onclick = function(event) {
 }
 
 movesText.style.color = "green";
+
 
 
 // Functions
@@ -110,20 +116,20 @@ function startLevel() {
     cards.forEach((imagePath, index) => { // Calls a function for each item
         const card = document.createElement("div");
         card.classList.add("card");
-       if(level === 1) { // This adds a class to gameboard level 1
+       if(level === 1) { // This adds a class to make max grid size smaller for level 1
             gameBoard.classList.add("small");
         } else {
             gameBoard.classList.remove("small");
         } 
 
-        if(level === 3 || level === 4) { // Changes max grid width to 3 and 4
+        if(level === 3 || level === 4) { // Changes max grid width to level 3 and 4
             gameBoard.classList.add("mid-grid");
         } else {
             gameBoard.classList.remove("mid-grid");
         }
 
         if(level === 5 || level === 6) { // 
-            gameBoard.classList.add("late-grid"); // Changes max grid width to 5 and 6
+            gameBoard.classList.add("late-grid"); // Changes max grid width to level 5 and 6
         } else {
             gameBoard.classList.remove("late-grid");
         }
@@ -153,6 +159,15 @@ function shuffle(array) {
 
 // Function to flip the cards
 function flipCard(card) {
+    
+    if(!musicStart) { // Music starts when user flips card
+        backgroundMusic.play().catch(err => {
+            console.log("Unable to play music", err);
+        });
+        musicStart = true;
+    }
+
+
     if(flippedCards.length < 2 && !card.classList.contains("flipped")) {
         card.classList.add("flipped");
         card.innerHTML = `<img src="${card.dataset.imagePath}" alt="card-image" style="height: 100%; width: 100%;  object-fit: cover;  border-radius: 5px;">`;
@@ -164,10 +179,16 @@ function flipCard(card) {
             setTimeout(checkMatch, 500);
         }
     }
-
-
    
 }
+
+// Music volume control
+const volumeControl = document.getElementById("volume-control");
+
+volumeControl.addEventListener("input", function() {
+    backgroundMusic.volume = volumeControl.value;
+});
+
 
 // Function to check if cards match
 function checkMatch() {
@@ -187,11 +208,9 @@ function checkMatch() {
                 }, 2000);
             }  else {
                 result.innerText = "Level complete!";
-                nextLevelButton.classList.remove("hidden");
-                nextLevelButton.classList.add("ready");
+                nextLevelButton.classList.remove("hidden"); // Removes hidden class
+                nextLevelButton.classList.add("ready"); // Gives function to the next level button
                 nextLevelButton.disabled = false;
-               
-
             }
         }
 
@@ -199,8 +218,7 @@ function checkMatch() {
         card1.classList.remove("flipped");
         card2.classList.remove("flipped");
         card1.innerHTML = `<i class="fa-solid fa-question fa-lg bounce-on-hover"></i>`;
-        card2.innerHTML = `<i class="fa-solid fa-question fa-lg bounce-on-hover "></i>`;
-        
+        card2.innerHTML = `<i class="fa-solid fa-question fa-lg bounce-on-hover "></i>`;  
     }
 
     flippedCards = [];

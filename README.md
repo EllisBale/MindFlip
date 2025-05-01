@@ -677,6 +677,10 @@ How to play JavaScript modal (https://www.w3schools.com/howto/tryit.asp?filename
 
 Helped with my coding (https://www.w3schools.com/js/default.asp) and (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
+SVG design (https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/)
+
+Audio volume control (https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/range)
+
 
 **Images used**
 
