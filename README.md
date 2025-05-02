@@ -27,6 +27,8 @@ The users goals are to have fun playing the game while improving their memory. T
 
 The aim of this website is to have fun playing a game made with javascript. The game is a memory card game which you can have fun playing while also offering several cognitive benefits. The website will allow users to have fun while improving their memory. I want users to be able to improve their hand and eye coordination, memory enhancement, cognitive development and mental agility such as processing speed.
 
+<hr>
+
 ## User stories
 
 
@@ -137,6 +139,8 @@ I took inspiration from the other websites below. I added parts to my website su
 
 [CodePen](https://codepen.io/zerospree/full/bNWbvW)
 
+<hr>
+
 ## 2. Design
 
 
@@ -181,6 +185,8 @@ For the navbar I used 2fd073 which is a type of green. I picked this colour for 
 
 For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik Mono One which I felt goes well with the website category memory games also giving it a playfull feel to the site. For text in the body I used Work Sans because I was looking for something minimal so that the text didn't distract the user for the main point of the website which is the game.
 
+<hr>
+
 ## 3. Technologies
 
 
@@ -208,7 +214,9 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 * VS Code - This software was used to code my website during this project.
 
+* FontAwesome - This was used to add icons to my website for visuals.
 
+<hr>
 
 ## 4. Features
 
@@ -319,13 +327,13 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 </details>
 
+<hr>
+
+## 5. **Testing & Bugs**
 
 
-## 5. Testing & Bugs
 
-
-
-### HTML validation
+### **HTML validation**
 
 To test my html code validation I used the [W3C HTML Validator](https://validator.w3.org/)  by direct input. This let's me see what errors I have such as unwanted elements.
 
@@ -341,7 +349,7 @@ To test my html code validation I used the [W3C HTML Validator](https://validato
 
 
 
-### CSS validation
+### **CSS validation**
 
 I copied my style.css code into the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and this will show me if I have any coding errors in my css file.
 
@@ -352,25 +360,27 @@ I copied my style.css code into the [W3C CSS Validator](https://jigsaw.w3.org/cs
 
 </details>
 
+<hr>
 
-### Accessibility
-
-
-
+### **Accessibility**
 
 
-### Testing on different devices
+
+
+
+### **Testing on different devices**
 
 I tested different devices through Google Chrome Developer Tools. This tool allowed me to adjust the size of the screen. 
 
 
 
-### Browser Compatibility 
+### **Browser Compatibility** 
 
 Chrome - This is the browser I used to view my website during development.
+<hr>
 
-### Bugs during development and fixes
-
+### **Bugs during development and fixes:**
+<br>
 <details>
 
 <summary> Images not showing up from my array </summary>
@@ -532,22 +542,44 @@ When playing I noticed that the images would be the same for each level such as 
 
 <details>
 
-<summary>  </summary>
+<summary> Unmuting the button won't work when tabbed out and in again </summary>
 <br>
 
-
+I noticed there was a bug with my mute button when I tabbed out and in again. This bug would only occur when I had the background music on mute to begin then tabbing out and in again to try to unmute it. I fixed this by adding a extra if statement to my mute button function.
 
 **Fix**
 
-`let shuffleImages = [...images];
-   shuffle(shuffleImages);
-   let selectedImages = shuffleImages.slice(0, numPair);
-   let cards = [...selectedImages, ...selectedImages];`
+` if(!isMuted && backgroundMusic.paused) { // Allows music to resume if the user had muted it, then tabbed out.
+        backgroundMusic.play().catch(err => {
+            console.warn("Playback blocked on unmute:", err);
+        });
+    } `
 
 
  </details>
 
-### Functional Testing 
+
+<br>
+
+<details>
+
+<summary> Background music still playing when tabbed out on mobile </summary>
+<br>
+
+When I completed the audio issue when tabbed out for desktop. I realised on my github website on my mobile that the background music was still playing when tabbed out. I fixed this by adding "window.addEventListener("pagehide")" this stops the background music from playing when tabbed out on mobile.
+
+
+**Fix**
+
+`window.addEventListener("pagehide", () => { // Fixes issue for background music playing when tabbed out on mobile
+    backgroundMusic.pause();
+});`
+
+
+ </details>
+<hr>
+
+### **Functional Testing**
 
 #### Interactables
 
@@ -578,14 +610,14 @@ When playing I noticed that the images would be the same for each level such as 
 
 
 
-    ### Manual Testing file
+    ### **Manual Testing file**
 
     ### [Testing file](./docs/testing/functionalTesting.md)
 
+<hr>
 
 
-
-### Testing User Stories
+### **Testing User Stories:**
 
 #### **User story 1:**
 
@@ -593,6 +625,7 @@ When playing I noticed that the images would be the same for each level such as 
 
 **Feature**
 - 
+
 
 **Action**
 
@@ -645,11 +678,11 @@ When playing I noticed that the images would be the same for each level such as 
 
 -
 
+<hr>
 
+## **Deployment**
 
-## Deployment
-
-### Github
+### **Github**
 
 ### Version Control
 
@@ -686,7 +719,9 @@ Navigate to the GitHub Repository you want to clone to use locally:
 
 The project will now of been cloned on your local machine for use.
 
-## Credits
+<hr>
+
+## **Credits**
 
 What I used to shuffle my array (https://www.youtube.com/watch?v=FGAUekwri1Q&ab_channel=BroCode/)
 
