@@ -301,6 +301,11 @@ document.addEventListener("visibilitychange", function() {
 });
 
 
+window.addEventListener("pagehide", () => { // Fixes issue for background music playing when tabbed out on mobile
+    backgroundMusic.pause();
+});
+
+
 function startNextLevel() {   
 }
 
