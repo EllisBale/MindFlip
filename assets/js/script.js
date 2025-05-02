@@ -37,6 +37,7 @@ let musicStart = false;
 // Mute/unmute button
 const muteButton = document.getElementById("mute-button");
 let isMuted = false;
+let wasMutedTabbedOut = false;
 
 // How to play DOM elements 
 const modal = document.getElementById("myModal");
@@ -272,10 +273,32 @@ function toggleMute() {
         muteButton.innerHTML = `<i class="fa-solid fa-volume-xmark fa-lg"></i>`;
     } else {
         muteButton.innerHTML = `<i class="fa-solid fa-volume-high fa-lg"></i>`;
-    }    
+    }
+    
+    if(!isMuted && backgroundMusic.paused) { // Allows music to resume if the user had muted it, then tabbed out.
+        backgroundMusic.play().catch(err => {
+            console.warn("Playback blocked on unmute:", err);
+        });
+    }
 };
 
+
 muteButton.addEventListener("click", toggleMute);
+
+// Function to pause music from playing when not in tab
+document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+        backgroundMusic.pause();
+        
+    } else {
+       if (!isMuted &&  backgroundMusic.paused) { // Play music again when in tab
+        backgroundMusic.play().catch(err => {
+            console.warn("Autoplay failed on return:", err);
+        });
+       }
+    }
+
+});
 
 
 function startNextLevel() {   

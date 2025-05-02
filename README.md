@@ -530,6 +530,23 @@ When playing I noticed that the images would be the same for each level such as 
  </details>
 <br>
 
+<details>
+
+<summary>  </summary>
+<br>
+
+
+
+**Fix**
+
+`let shuffleImages = [...images];
+   shuffle(shuffleImages);
+   let selectedImages = shuffleImages.slice(0, numPair);
+   let cards = [...selectedImages, ...selectedImages];`
+
+
+ </details>
+
 ### Functional Testing 
 
 #### Interactables
@@ -682,6 +699,8 @@ SVG design (https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns
 Audio volume control (https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/range)
 
 Background music (https://pixabay.com/music/beautiful-plays-just-relax-11157/)
+
+visibility change event (https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API#pausing_audio_on_page_hide)
 
 
 **Images used**
