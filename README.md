@@ -686,7 +686,18 @@ When I completed the audio issue when tabbed out for desktop. I realised on my g
     - Function added when level complete
     - When level is completed, sends user to next level 
 
+- Level select button
+    - Lets user select levels 1/6
+    - Grid size change depending on the level
 
+- Volume controls
+    - User can change increase/decrease background audio with slider
+    - Stops playing when user is tabbed out
+    - Plays again when user tabs back in
+
+- Mute/unmute button
+    - Pause background music
+    - Unpause background music
 
     ### **Manual Testing file**
 

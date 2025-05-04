@@ -34,6 +34,20 @@ Use this to make table https://www.tablesgenerator.com/markdown_tables
     - Function added when level complete
     - When level is completed, sends user to next level 
 
+
+- Level select button
+    - Lets user select levels 1/6
+    - Grid size change depending on the level
+
+- Volume controls
+    - User can change increase/decrease background audio with slider
+    - Stops playing when user is tabbed out
+    - Plays again when user tabs back in
+
+- Mute/unmute button
+    - Pause background music
+    - Unpause background music
+
 1. Card Flips (feature) Expected Result: Card flips when clicked on.  Status: PASS      Description: Test: Click on card to make sure it flips over and adds a ".flipped" class to html from javascript. Steps: 1. Use chrome devtools and use "select element" and hover mouse over flipped card.  2. Check card div for a class of "flipped". 3. When both cards are flipped and are unmatched, check card visuals for the card to go back to its original state. 
 
 
