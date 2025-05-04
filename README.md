@@ -226,7 +226,7 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 ## 3. Technologies
 
 
-### Languages and tools used in this project
+### Languages and tools used in this project:
 
 * HTML - The main language I use for this website is HTML which is the foundation and the structure of the website.
 
@@ -342,43 +342,29 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 </details>
 
+<br>
 
+#### **Gameboard grid**
 
+- Grid increases cards when going up in levels to make the game harder for the user.
 
-### Mobile screenshots ###
+- Cards flipping have smooth transitions.
 
+- Cards have hover effects that, scale up in size, change colour and includes a fontAwesome question mark icon that bounces. These effects make the grid more interactive and better visually for the user.
 
+- Responsive cards and gridsize for smaller devices.
 
+- Hides cards from grid when matching.
 
+<details> 
 
-### Tablet screenshots ###
+<summary> Gameboard grid gif </summary>
 
-
-### Desktop screenshots ###
-
-
-
-
-### Desktop hover effect ###
-
-
-
+![Gameboard](docs/readme_images/gameboard.gif) 
 
 </details>
 
 
-
-#### 404 page  ####
-
-
-
-<details>
-<summary> Screenshot </summary>
-
-<img src="">
-
-
-</details>
 
 <hr>
 
