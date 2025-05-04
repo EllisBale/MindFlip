@@ -380,13 +380,30 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 <details>
     
-<summary> Volume controls </summary>    
+<summary> Volume controls gif </summary>    
     
 ![Volume controls](docs/readme_images/volumecontrol.gif) 
     
 </details>
 
 
+#### **How to play modal**
+
+- A pop-up overlay that shows the user instructions of how to play the game.
+
+- Includes gif video on each instruction.
+
+- Allow user to read instructions and game doesn't refresh.
+
+
+<details> 
+
+<summary> How to play screenshot </summary>
+
+![how to play modal](docs/readme_images/desktopmodal.png) 
+
+
+</details>
 
 <hr>
 
