@@ -38,29 +38,28 @@ As a user a want smooth transitions when I flip the cards.
 
 **Acceptance criteria:** 
 
-- [x] Cards flipped have smooth transition.
-- [x] Cards turn back when there is a incorrect match.
+- Cards flipped have smooth transition.
+- Cards turn back when there is a incorrect match.
 
 **Tasks:** 
 
-- [x] Use CSS for the cards animation.
-- [x] Use JavaScript to create a flip card function.
-
+- Use CSS for the cards animation.
+- Use JavaScript to create a flip card function.
 
 
 ### User story 2:
 
 As a user I would like to have harder and more levels so I don't get bored of the same level.
 
-**Acceptance criteria**
+**Acceptance criteria:**
 
-- [x] Multiple levels.
-- [x] Levels get harder to complete.
+- Multiple levels.
+- Levels get harder to complete.
 
-**Tasks**
+**Tasks:**
 
-- [x] Create different levels using JavaScript.
-- [x] Make sure the user knows which level they are on.
+-  Create different levels using JavaScript.
+-  Make sure the user knows which level they are on.
 
 
 ### User story 3:
@@ -70,29 +69,29 @@ As a user I want a next level button so that I can move onto different levels.
 
 **Acceptance criteria:**
 
-- [x] A button that enables the player to move onto the other levels.
+-  A button that enables the player to move onto the other levels.
 
-- [x] The button is placed at the bottom of the grid.
+-  The button is placed at the bottom of the grid.
 
 **Tasks:**
 
-- [x] Using JavaScript make it so the button moves onto the next level.
+- Using JavaScript make it so the button moves onto the next level.
 
-- [x] Using CSS or bootstrap make sure the button is placed at the bottom of the grid template.
+- Using CSS or bootstrap make sure the button is placed at the bottom of the grid template.
 
 ### User story 4:
 
 As a user I want to be able to replay the same level so that I can improve my moves.
 
-**Acceptance criteria** 
+**Acceptance criteria:** 
 
-- [x] Add a reset level button that allows the user to play the level again.
-- [x] Styling is similar to the other buttons and is adaptive to different screen sizes.
+-  Add a reset level button that allows the user to play the level again.
+-  Styling is similar to the other buttons and is adaptive to different screen sizes.
 
-**Tasks** 
+**Tasks:** 
 
-- [x] Using CSS and HTML create a reset level button that has similar styling to the other game buttons.
-- [x] Use JavaScript to reset the game level and randomize the cards again.
+- Using CSS and HTML create a reset level button that has similar styling to the other game buttons.
+- Use JavaScript to reset the game level and randomize the cards again.
 
 ### User story 5:
 
@@ -101,29 +100,29 @@ As a user that uses a smaller device, I would like to play the game without any 
 
 **Acceptance Criteria:**
 
-- [x] The grid template adapts to different screen sizes.
+- The grid template adapts to different screen sizes.
 
 **Tasks:**
 
-- [x] Using CSS adapt different elements to different screen sizes.
+- Using CSS adapt different elements to different screen sizes.
 
-- [x] Make sure the games performance on smaller screen sizes is optimal.
+- Make sure the games performance on smaller screen sizes is optimal.
 
 
 ### User story 6:
 
 As a user I want to know how many moves I am on so that I can improve on it the next time I play.
 
-**Acceptance criteria** 
+**Acceptance criteria:** 
 
-- [x] Have a moves element of the page that gives you a up to data moves the player is on.
-- [x] Make the moves element adapt to different screen sizes.
+- Have a moves element of the page that gives you a up to data moves the player is on.
+- Make the moves element adapt to different screen sizes.
 
-**Tasks**
+**Tasks:**
 
-- [x] Add the button to the top of the card game container using html and CSS.
-- [x] Update the moves counter using JavaScript so that the player has a up to data number.
-- [x] Add styling to the element and make it similar to the other buttons and elements on the page.
+- Add the button to the top of the card game container using html and CSS.
+- Update the moves counter using JavaScript so that the player has a up to data number.
+- Add styling to the element and make it similar to the other buttons and elements on the page.
 
 
 
@@ -133,33 +132,33 @@ As a user I would like to have some music in the background when playing as well
 
 **Acceptance criteria:**
 
-- [x] Music is played on the homepage.
+- Music is played on the homepage.
 
-- [x] The game music has volume controls as well as a mute button.
+- The game music has volume controls as well as a mute button.
 
 
 **Tasks:**
 
-- [x] Add background music with JavaScript
-- [x] Make a mute button using JavaScript, HTML and CSS.
-- [x] Add volume bar to control background music.
+- Add background music with JavaScript
+- Make a mute button using JavaScript, HTML and CSS.
+- Add volume bar to control background music.
 
 
 ### User story 8:
 
-I would like to learn how to play this game.
+I would like to learn how to play the game and understand the goal of the game.
 
 
-**Acceptance criteria**
+**Acceptance criteria:**
 
-- [x]  A page or modal that explains how the game is meant to be played.
+- A page or modal that explains how the game is meant to be played.
 
-**Tasks**
+**Tasks:**
 
-- [x]  Create a modal on how to play the game.
-- [x]  Add videos on explaining the game.
+-  Create a modal on how to play the game.
+-  Add videos on explaining the game.
 
-
+<hr>
 
 ### Research
 
@@ -404,6 +403,53 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 
 </details>
+
+#### **Reset button**
+
+- Allows user to reset level by reshuffling cards and resetting moves.
+
+- Helps user reset their game if they are aiming for a certain amount of moves.
+
+<details> 
+
+<summary> Reset button gif </summary>
+
+![Reset button](docs/readme_images/reset.gif) 
+
+</details>
+
+
+#### **Next level button**
+
+- Only functions when user has completed level.
+
+- Button is red when not in function during the game, green with a pulsing animation when user matches all cards.
+
+- Sends user to next level.
+
+<details> 
+
+<summary> Next level button gif </summary>
+
+![Next level button](docs/readme_images/nextlevel.gif) 
+
+</details>
+
+
+#### **Level select**
+
+- Button that opens options for users to select level 1 to 6. This allows the user to go back to previous levels.
+
+- Allows users to skip to harder levels.
+
+<details> 
+
+<summary> Level select button gif </summary>
+
+![Level select button](docs/readme_images/levelselect.gif) 
+
+</details>
+
 
 <hr>
 
@@ -706,66 +752,9 @@ When I completed the audio issue when tabbed out for desktop. I realised on my g
 <hr>
 
 
-### **Testing User Stories:**
-
-#### **User story 1:**
+### **User story testing:**
 
 
-
-**Feature**
-- 
-
-
-**Action**
-
-- 
-
-**Expected Result**
-
-- 
-
-
-
-#### **User story 2:**
-
-
-
-
-**Feature**
-
-- 
-
-
-**Action**
-
-- 
-
-
-
-**Expected Result**
-
-- 
-
-
-
-#### **User story 3:**
-
-
-
-
-**Feature**
-
--
-
-
-**Action**
-
-- 
-
-
-**Expected Result**
-
--
 
 <hr>
 
