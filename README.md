@@ -125,6 +125,42 @@ As a user I want to know how many moves I am on so that I can improve on it the 
 - [x] Update the moves counter using JavaScript so that the player has a up to data number.
 - [x] Add styling to the element and make it similar to the other buttons and elements on the page.
 
+
+
+### User story 7: 
+
+As a user I would like to have some music in the background when playing as well as volume control and a mute button.
+
+**Acceptance criteria:**
+
+- [x] Music is played on the homepage.
+
+- [x] The game music has volume controls as well as a mute button.
+
+
+**Tasks:**
+
+- [x] Add background music with JavaScript
+- [x] Make a mute button using JavaScript, HTML and CSS.
+- [x] Add volume bar to control background music.
+
+
+### User story 8:
+
+I would like to learn how to play this game.
+
+
+**Acceptance criteria**
+
+- [x]  A page or modal that explains how the game is meant to be played.
+
+**Tasks**
+
+- [x]  Create a modal on how to play the game.
+- [x]  Add videos on explaining the game.
+
+
+
 ### Research
 
 
@@ -218,9 +254,9 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 <hr>
 
-## 4. Features
+## 4. **Features**
 
-### Home page 
+### **Whole site**
 
 #### **Nav bar**
 
@@ -232,44 +268,55 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 - Background of navbar as a SVG design from [svgbackgrounds.com](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/).
 
+- Includes a hover effect when hovering over "how to play".
 
 
 <details>
 
 <summary> Screenshots </summary>
+<br>
 
-### Mobile and Tablet ###
+**Mobile**
 
- <img src="">
+![Mobile navbar](docs/readme_images/mobilenav.png)
 
-### Desktop ### 
 
-<img src="">
+**Tablet**
 
-### Navbar Link Hover ###
-<img src="">
+![Tablet navbar](docs/readme_images/tabletnav.png) 
+
+**Desktop** 
+
+![Desktop navbar](docs/readme_images/desktopnav.png) 
 
 
 </details>
 
 
+#### **Footer**
 
+- Hover effect on github FontAwesome logo
 
-#### Footer
+- SVG design link
 
+- Responsive
 
 
 <details>
 <summary> Footer Screenshot </summary>
+<br>
 
-**Mobile** <br>
-<img src="">
+**Mobile** 
 
-**Tablet** <br>
-<img src="">
+![Mobile footer](docs/readme_images/mobilefooter.png) 
 
-**Desktop** <br>
-<img src="">
+**Tablet** 
+
+![Tablet footer](docs/readme_images/tabletfooter.png) 
+
+**Desktop** 
+
+![Desktop navbar](docs/readme_images/desktopfooter.png) 
 
 </details>
 
@@ -281,10 +328,16 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 <details>
 <summary>Screenshot </summary>
+<br>
+
+**Mobile & Tablet**
+
+<img src="docs/readme_images/mobiletablethomepage.png" width="700px">
+
+**Desktop**
 
 
-
-
+<img src="docs/readme_images/homepage.png" width="500px">
 
 
 </details>

@@ -75,3 +75,6 @@ Use this to make table https://www.tablesgenerator.com/markdown_tables
 
 
 13. Unmute button  (feature) Expected Result: User can unmute the music when clicking the mute button again  Status: PASS    Description: Test: Clicking the mute button again to see if button unmutes. Steps: 1. Flip card to start music. 2. Click mute button for music to stop and icon to change. 3. Click the mute button again to unmute music. 4. Listen for music to be playing again.
+
+
+14. Music mutes when tabbed out (feature) Expected Result: Music stops when tabbed out and starts when tabbed back in. Status: PASS    Description: Test: Tabbing out of the websites window for the music to stop. Steps: 1. Flip card to start music. 2. Open a different tab in chrome. 3. Listen to see if music is still playing. 4. Check volume settings to see if browser has paused the music on device. 5. Go back to the tab to for the music to unpause.
