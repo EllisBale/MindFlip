@@ -342,7 +342,6 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 </details>
 
-<br>
 
 #### **Gameboard grid**
 
@@ -362,6 +361,29 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 ![Gameboard](docs/readme_images/gameboard.gif) 
 
+</details>
+
+<br>
+
+#### **Volume control**
+
+- Volume slider
+
+    - Background music that allows players to control the audio volume with slider.
+    - Volume slider for background music is removed on tablet and mobile as user can turn the volume down with device.
+
+- Mute/unmute 
+
+    - Mutes/unmutes background music by pausing it.
+    - Volume mutes/unmutes when tabbing in and out.
+
+
+<details>
+    
+<summary> Volume controls </summary>    
+    
+![Volume controls](docs/readme_images/volumecontrol.gif) 
+    
 </details>
 
 
