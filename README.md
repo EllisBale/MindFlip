@@ -422,7 +422,9 @@ I copied my style.css code into the [W3C CSS Validator](https://jigsaw.w3.org/cs
 <details>
 <summary> style.css </summary>
 
-<img src="">
+No issues when testing.
+
+![HTML validation](docs/readme_images/cssvalidator.png)
 
 </details>
 

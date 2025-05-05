@@ -1,13 +1,6 @@
 /* GoogleFonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-/* Rubik Mono One */ 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-/* Work Sans */ 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-/* DynaPuff */
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
-/* Quicksand */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Rubik+Mono+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=DynaPuff:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -19,20 +12,19 @@ body {
     margin: 0 auto; 
     background-color: #1E1E1E;
     color: #E0E0E0;
-    display: flex;
-    text-align: center;
 }
 
 
 h1 {
-    font-family:  "Rubik Mono One", monospace;
+    font-family: "Rubik Mono One", "Courier New", Courier, monospace;
     margin-top: 3.5rem;
     letter-spacing: 2px;
     color: #fff;
 }
 
+
 h2 {
-    font-family:  "Rubik Mono One", monospace;
+    font-family: "Rubik Mono One", "Courier New", Courier, monospace;
 }
 
 
@@ -56,7 +48,7 @@ strong {
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
-    /* https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/ */                         /* Place this link at the bottom of the index page */
+    /* https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/ */         
     background-color: #2FD073;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(58,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%232FD073'/%3E%3Cstop offset='1' stop-color='%232FD073'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(60,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(226,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
@@ -108,10 +100,9 @@ strong {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  color: #000;
-  font-weight: 600;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: #000;
+    font-weight: 600;
 }
 
 
@@ -124,6 +115,7 @@ strong {
     border-radius: 20px;
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 
 .close {
@@ -153,7 +145,7 @@ strong {
 /* Volume control */
 
 .volume-control, .mute-button {
-    background-color: #2A2A2A;;
+    background-color: #2A2A2A;
     border: none;
     border-radius: 10px;
     color: white;
@@ -257,6 +249,13 @@ strong {
     cursor: pointer;
     font-size: 1rem;
 }
+
+
+.control-button:focus:hover {
+    outline: 2px solid rgba(255, 255, 255, 0.3);
+    outline-offset: 2px;
+}
+
 
 .next-level {
     background-color: rgb(126, 48, 48); 
