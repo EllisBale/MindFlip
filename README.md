@@ -187,6 +187,8 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 * FontAwesome - This was used to add icons to my website for visuals.
 
+* Bootstrap - Font-end framework I used to make containers responsive.
+
 <hr>
 
 

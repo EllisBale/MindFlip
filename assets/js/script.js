@@ -64,6 +64,12 @@ backgroundMusic.loop = true;
 let musicStart = false;
 
 
+// Flip card sound effect
+
+const flipCardSound = new Audio("assets/music/flipcard.mp3")
+flipCardSound.preload = "auto";
+
+
 // Mute/unmute button
 
 const muteButton = document.getElementById("mute-button");
@@ -259,13 +265,13 @@ function shuffle(array) {
 
 // Function to flip the cards
 function flipCard(card) {
+    
     if(!musicStart) { // Music starts when user flips card
         backgroundMusic.play().catch(err => {
             console.log("Unable to play music", err);
         });
         musicStart = true;
     }
-
 
     if(flippedCards.length < 2 && !card.classList.contains("flipped")) {
         card.classList.add("flipped");
@@ -276,12 +282,15 @@ function flipCard(card) {
 
         flippedCards.push(card); // Adds new item to the end of the array
 
+        flipCardEffect();
+
         if (flippedCards.length === 2) {
             moves ++;
             updateMoves();
             setTimeout(checkMatch, 500);
         }
     }
+
 
 }
 
@@ -336,6 +345,13 @@ function checkMatch() {
     }
 
     flippedCards = [];
+}
+
+
+// Flip card sound function
+function flipCardEffect () {
+    flipCardSound.currentTime = 0;
+    flipCardSound.play();
 }
 
 
