@@ -93,23 +93,8 @@ As a user I want to be able to replay the same level so that I can improve my mo
 - Using CSS and HTML create a reset level button that has similar styling to the other game buttons.
 - Use JavaScript to reset the game level and randomize the cards again.
 
+
 ### User story 5:
-
-As a user that uses a smaller device, I would like to play the game without any issues.
-
-
-**Acceptance Criteria:**
-
-- The grid template adapts to different screen sizes.
-
-**Tasks:**
-
-- Using CSS adapt different elements to different screen sizes.
-
-- Make sure the games performance on smaller screen sizes is optimal.
-
-
-### User story 6:
 
 As a user I want to know how many moves I am on so that I can improve on it the next time I play.
 
@@ -126,7 +111,7 @@ As a user I want to know how many moves I am on so that I can improve on it the 
 
 
 
-### User story 7: 
+### User story 6: 
 
 As a user I would like to have some music in the background when playing as well as volume control and a mute button.
 
@@ -144,7 +129,7 @@ As a user I would like to have some music in the background when playing as well
 - Add volume bar to control background music.
 
 
-### User story 8:
+### User story 7:
 
 I would like to learn how to play the game and understand the goal of the game.
 
@@ -206,11 +191,10 @@ I used Balsamiq Wireframes to help structure the wireframes before and during th
 
 ### Website Structure
 
-
+The website contains 1 page for the game and a modal that pops up when clicked on. I was originally going to add a seperate page for my "how to play" page but was recommended by student mentor to add a modal. Adding the modal instead of another html page allows the user to keep their game progress, otherwise the extra page would have refreshed when they returned back to the homepage.
 
 
 ### Colours
-
 
 For the navbar I used 2fd073 which is a type of green. I picked this colour for the navbar because I felt like it was visually appealing and great for a casual game. The black text on the navbar makes for high readability with the green. It helps with visually impaired users because of the good contrast score from https://imagecolorpicker.com/color-code/2fd073. The second colour I used for this website is a type of dark gray (#1E1E1E) for the body. I think this colour is easy on the eyes as well as going well with the navbar colour. The background is meant to be subtle and not distract the user when playing.
 
@@ -766,6 +750,17 @@ When I completed the audio issue when tabbed out for desktop. I realised on my g
 
 
 ### **User story testing:**
+
+
+| User Story                                                                                                                           | Testing                                                                                                                                                                                                                       |
+|--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| As a user, I like to have harder and more levels so I don't get bored of the same level.                                             | Added in a total of 6 levels which adds more cards onto the grid for each level  the user completes so it get's more difficult for user.                                                                                      |
+| As a user, I want to know how many moves I am on  so that I can improve the next time I play.                                        | Added in a moves count for each level at the top left of the gameboard grid so user  can see how they are doing during and after the game.                                                                                    |
+| As a user, I want to be able to replay the same  level so that I can improve my moves for that level.                                | Added in a reset level button function that is at the bottom left of the gameboard  grid. The reset button also reshuffles cards on the grid as well as resetting moves.                                                      |
+| As a user, I want a next level button so that  I can move onto the next level.                                                       | Added in a next level button that only functions when user completes level. When  user completes level the button turns green with a pulsing animation to let the user know that the button functions.                        |
+| As a user, I would like to have some music in the background when playing as well as volume controls to mute or turn the music down. | Added in background music with a mute/unmute button along with a volume slider so the user can control the audio level without having to on their device.                                                                     |
+| As a new user, I would like to learn how to play the game.                                                                           | Added in instructions modal that doesn't effect the game while they play so the user can view the instructions during any level. The modal includes gif video's for each instruction to give the user a better understanding. |
+| As a user, I want smooth transitions when I flip the cards.                                                                          | Added in card hover effect including colour change, transform and FontAwesome bounce on hover animation.                                                                                                                      |
 
 
 
