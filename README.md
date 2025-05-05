@@ -1,5 +1,7 @@
 # Mind Flip - Match the animal
 
+<a name="Top"></a>
+
 <img src="">
 
 
@@ -33,150 +35,70 @@ https://ellisbale.github.io/MindFlip/
 
 <a id="UX"></a>
 
-## 1. UX
+## 1. **UX**
 
 
 
-#### Project purpose 
+### **Project purpose** ####
 
 To have fun playing a game while improving brain function through memory game. I chose to have animal images which gave me plenty of images to add to the cards.
 
 
-#### **User goals** ####
+### **User goals** ####
 
 The users goals are to have fun playing the game while improving their memory. To do this there is different levels which get harder to complete so that the user doesn't get bored.
 
 
-
-#### **Site owner goals** ####
+### **Site owner goals** ####
 
 The aim of this website is to have fun playing a game made with javascript. The game is a memory card game which you can have fun playing while also offering several cognitive benefits. The website will allow users to have fun while improving their memory. I want users to be able to improve their hand and eye coordination, memory enhancement, cognitive development and mental agility such as processing speed.
 
-<hr>
 
-## User stories
+### **Target Audience**
 
-
-### User story 1:
-
-As a user a want smooth transitions when I flip the cards.
-
-**Acceptance criteria:** 
-
-- Cards flipped have smooth transition.
-- Cards turn back when there is a incorrect match.
-
-**Tasks:** 
-
-- Use CSS for the cards animation.
-- Use JavaScript to create a flip card function.
+The target audience for the game are casual players, kids and elderly.
 
 
-### User story 2:
+### **User Journey**
 
-As a user I would like to have harder and more levels so I don't get bored of the same level.
+- Entry point: The user lands on homepage with navbar and gameboard.
 
-**Acceptance criteria:**
+- Instructions: The "How to play" button opens a modal explaining how to play the game with text and gifs.
 
-- Multiple levels.
-- Levels get harder to complete.
+- Gameplay flow:
+    1. User starts on level 1.
 
-**Tasks:**
+    2. Game grid increases/decreases in size based on level.
 
--  Create different levels using JavaScript.
--  Make sure the user knows which level they are on.
+    3. User flips cards to find a matching pair.
 
+    4. Visual feedback on cards when user matches or mismatches.
 
-### User story 3:
-
-As a user I want a next level button so that I can move onto different levels.
+    5. User advances to next level when completed and clicked on with "Next level" button.
 
 
-**Acceptance criteria:**
+### **Interaction feedback**
 
--  A button that enables the player to move onto the other levels.
+- Cards that are flipped show animation.
 
--  The button is placed at the bottom of the grid.
+- Cards that are matched are removed from the board and hidden.
 
-**Tasks:**
+- Result message updates when finishing level.
 
-- Using JavaScript make it so the button moves onto the next level.
+- Hover effects such as the fontAwesome questionmark icon adds interaction.
 
-- Using CSS or bootstrap make sure the button is placed at the bottom of the grid template.
+- Cards scale up slightly when hovered over and change colour.
 
-### User story 4:
+### **Responsive Design**
 
-As a user I want to be able to replay the same level so that I can improve my moves.
+The website adapts to what device the user is using. For adapting screen sizes I used bootstrap. Bootstrap includes flexible grids that is based on a 12 column layout. This allows containers to adapt to different screen sizes. For extra responsive design I used @media max-width in my CSS file so that I could adapt the grid layout that is created in my JS file. I used this because I didn't add the grid gameboard layout with bootstrap.
 
-**Acceptance criteria:** 
-
--  Add a reset level button that allows the user to play the level again.
--  Styling is similar to the other buttons and is adaptive to different screen sizes.
-
-**Tasks:** 
-
-- Using CSS and HTML create a reset level button that has similar styling to the other game buttons.
-- Use JavaScript to reset the game level and randomize the cards again.
-
-
-### User story 5:
-
-As a user I want to know how many moves I am on so that I can improve on it the next time I play.
-
-**Acceptance criteria:** 
-
-- Have a moves element of the page that gives you a up to data moves the player is on.
-- Make the moves element adapt to different screen sizes.
-
-**Tasks:**
-
-- Add the button to the top of the card game container using html and CSS.
-- Update the moves counter using JavaScript so that the player has a up to data number.
-- Add styling to the element and make it similar to the other buttons and elements on the page.
-
-
-
-### User story 6: 
-
-As a user I would like to have some music in the background when playing as well as volume control and a mute button.
-
-**Acceptance criteria:**
-
-- Music is played on the homepage.
-
-- The game music has volume controls as well as a mute button.
-
-
-**Tasks:**
-
-- Add background music with JavaScript
-- Make a mute button using JavaScript, HTML and CSS.
-- Add volume bar to control background music.
-
-
-### User story 7:
-
-I would like to learn how to play the game and understand the goal of the game.
-
-
-**Acceptance criteria:**
-
-- A page or modal that explains how the game is meant to be played.
-
-**Tasks:**
-
--  Create a modal on how to play the game.
--  Add videos on explaining the game.
-
-<hr>
 
 ### Research
 
-
-**Reviewing other websites**
+#### **Reviewing other websites**
 
 I took inspiration from the other websites below. I added parts to my website such as moves, levels and next level button. I also wanted to see how they adapt their games to smaller screen sizes such as on mobile. To test this I used chrome dev tools to change the layout of my screen. The other website used flexbox and media query in CSS to adapt to smaller screen sizes which can help with my project.
-
 
 **Websites I visited**
 
@@ -188,10 +110,10 @@ I took inspiration from the other websites below. I added parts to my website su
 
 <a id="Design"></a>
 
-## 2. Design
+## 2. **Design**
 
 
-### Wireframes
+### **Wireframes**
 
 I used Balsamiq Wireframes to help structure the wireframes before and during the design of the website. This helped me plan the design of the website by helping me apply the layout and the navigation. Using the software is good for designing layouts on different devices so that I can implement them later on.
 
@@ -229,13 +151,14 @@ For the navbar I used 2fd073 which is a type of green. I picked this colour for 
 
 ### Fonts
 
-For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik Mono One which I felt goes well with the website category memory games also giving it a playfull feel to the site. For text in the body I used Work Sans because I was looking for something minimal so that the text didn't distract the user for the main point of the website which is the game.
+For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik Mono One which I felt goes well with the website category memory games also giving it a playfull feel to the site. For text in the body I used Work Sans because I was looking for something minimal so that the text didn't distract the user for the main point of the website which is the game. For buttons I went with system-ui -apple-system, sans serif. For game level and moves element I used DyanaPuff as it looks playful for casual gaming.
 
 <hr>
 
+
 <a id="Technologies"></a>
 
-## 3. Technologies
+## 3. **Technologies**
 
 
 ### Languages and tools used in this project:
@@ -378,7 +301,6 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 </details>
 
-<br>
 
 #### **Volume control**
 
@@ -515,6 +437,15 @@ I used the Wave accessibilty evaluation tool downloaded from the chrome web stor
 ![Wave accessibility test](docs/readme_images/wavetest.png) 
 
 </details>
+
+
+### Accessibility considerations
+
+- Buttons include aria-labels and alt on images.
+
+- Semantics HTML: Corect use of HTML semantic elements such as headings, nav and footer.
+
+- Colour on current level text to show level status with contrast being good.
 
 
 ### **Testing on different devices**
@@ -867,7 +798,7 @@ Background music (https://pixabay.com/music/beautiful-plays-just-relax-11157/)
 visibility change event (https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API#pausing_audio_on_page_hide)
 
 
-**Images used**
+**Images used:**
 
 - [Cat](https://unsplash.com/photos/a-close-up-of-a-cat-on-a-table-aZHOOdE9bjQ) By Roman Hnydin
 
@@ -896,8 +827,11 @@ visibility change event (https://developer.mozilla.org/en-US/docs/Web/API/Page_V
 - [Tiger](https://unsplash.com/photos/photo-of-tigers-face-DfKZs6DOrw4) By Ian Robinson
 
 
+## **Acknowledgements**
+
+Gareth McGirr - Student mentor 
+
+Code institute
 
 
-
-## Acknowledgements
-
+[Back to Top](#top)
