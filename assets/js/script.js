@@ -1,9 +1,9 @@
-const images = ["assets/images/fox.jpg","assets/images/bear.jpg",
-"assets/images/cat.jpg","assets/images/dog.jpg","assets/images/elephant.jpg",
-"assets/images/giraffe.jpg","assets/images/gorilla.jpg",
-"assets/images/penguin.jpg","assets/images/rabbit.jpg",
-"assets/images/tiger.jpg","assets/images/monkey.jpg",
-"assets/images/cow.jpg", "assets/images/bird.jpg"];
+const images = ["assets/images/fox.avif","assets/images/bear.avif",
+"assets/images/cat.avif","assets/images/dog.avif","assets/images/elephant.avif",
+"assets/images/giraffe.avif","assets/images/gorilla.avif",
+"assets/images/penguin.avif","assets/images/rabbit.avif",
+"assets/images/tiger.avif","assets/images/monkey.avif",
+"assets/images/cow.avif", "assets/images/bird.avif"];
 
 let level = 1;
 let flippedCards = [];
