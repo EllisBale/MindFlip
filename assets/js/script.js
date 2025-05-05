@@ -115,6 +115,10 @@ function startLevel() {
     gameBoard.innerHTML = "";
     result.innerText = "";
 
+     // Changes level number text based on what level
+    document.getElementById("level-number").innerText = level;
+
+
 
     // This makes it reset back to 1 when 6 is completed
 
@@ -168,7 +172,7 @@ function startLevel() {
     updateMoves(); // Moves reset after each level
 
     // Creates the gameboard cards
-    
+
     createCards(cards);
 
 
@@ -178,7 +182,7 @@ function startLevel() {
 // Function to create the cards
 
 function createCards(cards) {
-    cards.forEach((imagePath, index) => {
+    cards.forEach(function(imagePath, index) {
         const card = document.createElement("div");
         card.classList.add("card");
 
@@ -188,7 +192,9 @@ function createCards(cards) {
         `<i class="fa-solid fa-question fa-lg bounce-on-hover"></i>`;
         card.dataset.index = index;
         card.dataset.imagePath = imagePath;
-        card.addEventListener("click", () => flipCard(card));
+        card.addEventListener("click", function() {
+        flipCard(card);
+        });
         gameBoard.appendChild(card);
     });
 }
@@ -204,8 +210,8 @@ function adjustGridSize() {
 
         // This adds a class to make max grid size smaller for level 1
 
-           gameBoard.classList.add("small");
-           
+        gameBoard.classList.add("small");
+
        } else {
            gameBoard.classList.remove("small");
        }
@@ -238,6 +244,8 @@ document.getElementById("level-number").innerText = level;
  // Changes level number text based on what level
 
 
+
+
 // Fisher-Yates algorithm
 // Shuffle cards function
 
@@ -247,6 +255,7 @@ function shuffle(array) {
         [array[i], array[random]] = [array[random], array[i]];
     }
 }
+
 
 // Function to flip the cards
 function flipCard(card) {

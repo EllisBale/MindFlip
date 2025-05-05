@@ -424,6 +424,45 @@ I copied my style.css code into the [W3C CSS Validator](https://jigsaw.w3.org/cs
 
 </details>
 
+
+### **JSLint**
+
+I copied my script.js into [JSLint](https://www.jslint.com/) and this will check if the code complies with coding rules. At first I had mainly spacing and 80 characters or more on a line which I quickly fixed.
+
+<details>
+<summary> script.js </summary>
+<br>
+
+**Before:**
+
+Issue with arrow function being too complex.
+
+![JSLint test](docs/readme_images/jslinttestbefore.png) 
+
+
+**Fix:**
+
+Removed it from the startlevel function and added it as its own.
+
+`function createCards(cards) { 
+    cards.forEach(function(imagePath, index) {
+        const card = document.createElement("div");
+        card.classList.add("card");
+        adjustGridSize();
+        card.innerHTML =
+        <i class="fa-solid fa-question fa-lg bounce-on-hover"></i>;
+        card.dataset.index = index;
+        card.dataset.imagePath = imagePath;
+        card.addEventListener("click", function() {
+        flipCard(card);
+        });
+        gameBoard.appendChild(card);
+    });
+}`
+
+</details>
+
+
 <hr>
 
 ### **Accessibility**
