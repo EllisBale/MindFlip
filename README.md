@@ -488,8 +488,15 @@ I copied my style.css code into the [W3C CSS Validator](https://jigsaw.w3.org/cs
 
 ### **Accessibility**
 
+I used the Wave accessibilty evaluation tool downloaded from the chrome web store. This is a tool that helps make my site more accessible to users with disabilities. This tool helped me add alt and arial labels to elements on the page.
 
+<details> 
 
+<summary> Wave accessibilty test </summary>
+
+![Wave accessibility test](docs/readme_images/wavetest.png) 
+
+</details>
 
 
 ### **Testing on different devices**

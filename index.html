@@ -24,10 +24,11 @@
         <!-- Navbar -->
        <nav class="navbar navbar-expand-lg navbar-dark"> 
             <div class="container">
-
-                <img class="logo" src="assets/images/logo.jpeg" alt="" width="100" height="100" >
+                <img class="logo" src="assets/images/logo.jpeg" alt="Mind Flip logo" width="100" height="100" >
                 <!-- Modal btn -->
-                <p class="h2play" id="howtoplay"> How To Play</p>
+                <button class="h2play" id="howtoplay" aria-haspopup="dialog" aria-controls="myModal"> 
+                    How To Play
+                </button>
             </div>
        </nav> 
 
@@ -35,30 +36,32 @@
 
 
     <!-- Modal -->
-     <div id="myModal" class="modal">
-        <div class="modal-content ">
-            <span class="close"><i class="fa-solid fa-circle-xmark"></i></span>
+     <div id="myModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="close col-12" aria-label="Close modal button">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </button>
             <div class="row justify-content-between">
                 <!-- Game instructions -->
-             <h2>Instructions</h2>
+             <h2 id="modalTitle"> Instructions </h2>
              <div class="instructions-item-container col-12 col-md-6 mb-4">
                 <p class="mt-3 px-4"><strong>🏆 Goal:</strong> The Goal Of The Game Is To Match All Pairs To Complete The Level!</p>
-                <img src="assets/images/match.gif" alt="" class="img-fluid gif">
+                <img src="assets/images/match.gif" alt="Cards being matched to complete level" class="img-fluid gif">
              </div>
 
              <div class="instructions-item-container col-12 col-md-6 mb-4">
                 <p class="mt-3 px-4"><strong>🖱️ How To Flip Cards:</strong> Click On Two Cards To Flip Them Over And Try To Get A Match.</p>
-                <img src="assets/images/flip.gif" alt="" class="img-fluid gif">
+                <img src="assets/images/flip.gif" alt="Showing how to flip cards" class="img-fluid gif">
              </div>
 
              <div class="instructions-item-container col-12 col-md-6 mb-4">
                 <p class="mt-3 px-4"><strong>🎯 Matching Cards:</strong> If The Cards Match, They Will Be Removed From The Game.</p>
-                <img src="assets/images/matchpair.gif" alt="" class="img-fluid gif">
+                <img src="assets/images/matchpair.gif" alt="Matching a pair of cards" class="img-fluid gif">
              </div>
 
              <div class="instructions-item-container col-12 col-md-6 mb-4">
                 <p class="mt-3 px-4"><strong>❌ Mismatching Cards:</strong> If Both Cards Are Flipped And Not Matched, Then They Will Be Flipped Back.</p>
-                <img src="assets/images/flip.gif" alt="" class="img-fluid gif">
+                <img src="assets/images/flip.gif" alt="Mismatching a pair of cards" class="img-fluid gif">
              </div>
             </div>  
         </div>
@@ -77,7 +80,9 @@
             <div class="row justify-content-start gap-3 ps-3 align-items-center">
                 <!-- Mute button -->
                 <div class="col-auto p-2">
-                    <button class="mute-button p-2" id="mute-button"> <i class="fa-solid fa-volume-high fa-lg"></i></button>
+                    <button class="mute-button p-2" id="mute-button" aria-label="Mute"> 
+                        <i class="fa-solid fa-volume-high fa-lg"></i>
+                    </button>
                 </div>
                 <!-- Volume slider -->
                 <div class="col-auto volume-control p-2 d-none d-md-block">

@@ -58,7 +58,7 @@ window.onclick = function(event) {
     }
 }
 
-movesText.style.color = "green";
+movesText.style.color = "#17df17";
 
 
 
@@ -83,13 +83,13 @@ function startLevel() {
 
     
     if(level > 4) { // Colours for level 5 and above
-        levelNumber.style.color = "#d6345c";
+        levelNumber.style.color = "#ff3768";
     } else { // Makes sure the number colour goes back to white if below level 5
         levelNumber.style.color ="white";
     }
 
     if(level < 3) { // Colours for level 2 and belows
-        levelNumber.style.color = "green"; 
+        levelNumber.style.color = "#17df17"; 
     }
 
     if(level === 3 || level === 4) { // Colours that = level 3 and 4 will have yellow text
