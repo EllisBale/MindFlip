@@ -501,13 +501,19 @@ I used the Wave accessibilty evaluation tool downloaded from the chrome web stor
 
 ### **Testing on different devices**
 
-I tested different devices through Google Chrome Developer Tools. This tool allowed me to adjust the size of the screen. 
+I tested different devices through Google Chrome Developer Tools. This tool allowed me to adjust the size of the screen.
 
 
 
 ### **Browser Compatibility** 
 
 Chrome - This is the browser I used to view my website during development.
+
+Mozilla Firefox - This seems to work and look fine when viewing the website using this browser.
+
+Microsoft Edge - This browser seems fine but a few minor differences such as the volume slider colour which is not a major issue for me or the user.
+
+
 <hr>
 
 ### **Bugs during development and fixes:**
