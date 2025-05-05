@@ -8,6 +8,31 @@
 https://ellisbale.github.io/MindFlip/
 
 
+
+## Contents
+
+
+1. [UX](#UX)
+
+2. [Design](#Design)
+
+3. [Technologies](#Technologies)
+
+4. [Features](#Features)
+
+5. [Testing](#Testing)
+    - [HTML, CSS and JS valdiation](#Validation)
+    - [Browser Compatibility](#Browser)
+    - [Bugs & fixes](#Bugs)
+    - [Functional Testing](#functional)
+    - [User story testing](#Userstory)
+
+6. [Deployment](#Deployment)
+
+7. [Credits](#Credits)
+
+<a id="UX"></a>
+
 ## 1. UX
 
 
@@ -161,6 +186,8 @@ I took inspiration from the other websites below. I added parts to my website su
 
 <hr>
 
+<a id="Design"></a>
+
 ## 2. Design
 
 
@@ -206,6 +233,8 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 <hr>
 
+<a id="Technologies"></a>
+
 ## 3. Technologies
 
 
@@ -237,7 +266,10 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 <hr>
 
-## 4. **Features**
+
+## 4. **Features** 
+
+<a id="Features"></a>
 
 ### **Whole site**
 
@@ -437,9 +469,11 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 
 <hr>
 
-## 5. **Testing & Bugs**
+<a id="Testing"></a>
 
+## 5. **Testing & Bugs**  
 
+<a id="Validation"></a>
 
 ### **HTML validation**
 
@@ -487,7 +521,7 @@ I used the Wave accessibilty evaluation tool downloaded from the chrome web stor
 
 I tested different devices through Google Chrome Developer Tools. This tool allowed me to adjust the size of the screen.
 
-
+<a id="Browser"></a>
 
 ### **Browser Compatibility** 
 
@@ -499,6 +533,8 @@ Microsoft Edge - This browser seems fine but a few minor differences such as the
 
 
 <hr>
+
+<a id="Bugs"></a>
 
 ### **Bugs during development and fixes:**
 <br>
@@ -700,6 +736,8 @@ When I completed the audio issue when tabbed out for desktop. I realised on my g
  </details>
 <hr>
 
+<a id="Functional"></a>
+
 ### **Functional Testing**
 
 #### Interactables
@@ -748,6 +786,7 @@ When I completed the audio issue when tabbed out for desktop. I realised on my g
 
 <hr>
 
+<a id="Userstory"></a>
 
 ### **User story testing:**
 
@@ -766,7 +805,9 @@ When I completed the audio issue when tabbed out for desktop. I realised on my g
 
 <hr>
 
-## **Deployment**
+<a id="Deployment"></a>
+
+## 6. **Deployment**
 
 ### **Github**
 
@@ -807,7 +848,9 @@ The project will now of been cloned on your local machine for use.
 
 <hr>
 
-## **Credits**
+<a id="Credits"></a>
+
+## 7. **Credits**
 
 What I used to shuffle my array (https://www.youtube.com/watch?v=FGAUekwri1Q&ab_channel=BroCode/)
 
