@@ -173,33 +173,8 @@ function startLevel() {
     cards.forEach((imagePath, index) => { // Calls a function for each item
         const card = document.createElement("div");
         card.classList.add("card");
-       if(level === 1) {
-         // This adds a class to make max grid size smaller for level 1
-            gameBoard.classList.add("small");
-        } else {
-            gameBoard.classList.remove("small");
-        }
-
-        if(level === 3 || level === 4) {
-
-            // Changes max grid width to level 3 and 4
-
-            gameBoard.classList.add("mid-grid");
-
-        } else {
-            gameBoard.classList.remove("mid-grid");
-        }
-
-        if(level === 5 || level === 6) {
-            gameBoard.classList.add("late-grid");
-
-             // Changes max grid width to level 5 and 6
-
-        } else {
-            gameBoard.classList.remove("late-grid");
-        }
-
-
+        
+        adjustGridSize();
 
         card.innerHTML =
         `<i class="fa-solid fa-question fa-lg bounce-on-hover"></i>`;
@@ -210,13 +185,47 @@ function startLevel() {
 
     });
 
- document.getElementById("level-number").innerText = level;
- // Changes level number text based on what level
+}
 
-};
+// Function that adjusts the grid based on level
+
+function adjustGridSize() {
+    if(level === 1) {
+
+        // This adds a class to make max grid size smaller for level 1
+
+           gameBoard.classList.add("small");
+           
+       } else {
+           gameBoard.classList.remove("small");
+       }
+
+       if(level === 3 || level === 4) {
+
+           // Changes max grid width to level 3 and 4
+
+           gameBoard.classList.add("mid-grid");
+
+       } else {
+           gameBoard.classList.remove("mid-grid");
+       }
+
+       if(level === 5 || level === 6) {
+           gameBoard.classList.add("late-grid");
+
+            // Changes max grid width to level 5 and 6
+
+       } else {
+           gameBoard.classList.remove("late-grid");
+       }
+}
+
+
 
 nextLevelButton.addEventListener("click", nextLevel); // Starts next level
 
+document.getElementById("level-number").innerText = level;
+ // Changes level number text based on what level
 
 
 // Fisher-Yates algorithm
