@@ -404,7 +404,9 @@ To test my html code validation I used the [W3C HTML Validator](https://validato
 <details>
 <summary> index.html </summary>
 
-![HTML validation]()
+No issues when testing.
+
+![HTML validation](docs/readme_images/htmlvalidator.png)
 
 
 
