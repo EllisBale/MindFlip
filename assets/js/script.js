@@ -167,13 +167,21 @@ function startLevel() {
     moves = 0;
     updateMoves(); // Moves reset after each level
 
+    // Creates the gameboard cards
+    
+    createCards(cards);
 
-    // Creates the game board
 
-    cards.forEach((imagePath, index) => { // Calls a function for each item
+}
+
+
+// Function to create the cards
+
+function createCards(cards) {
+    cards.forEach((imagePath, index) => {
         const card = document.createElement("div");
         card.classList.add("card");
-        
+
         adjustGridSize();
 
         card.innerHTML =
@@ -182,10 +190,12 @@ function startLevel() {
         card.dataset.imagePath = imagePath;
         card.addEventListener("click", () => flipCard(card));
         gameBoard.appendChild(card);
-
     });
-
 }
+
+
+
+
 
 // Function that adjusts the grid based on level
 
