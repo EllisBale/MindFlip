@@ -24,6 +24,7 @@ https://ellisbale.github.io/MindFlip/
 
 5. [Testing](#Testing)
     - [HTML, CSS and JS valdiation](#Validation)
+    - [Lighthouse testing](#Lighthouse)
     - [Browser Compatibility](#Browser)
     - [Bugs & fixes](#Bugs)
     - [Automated & Manual testing](#Principles)
@@ -466,6 +467,21 @@ Removed it from the startlevel function and added it as its own.
         gameBoard.appendChild(card);
     });
 }`
+
+</details>
+
+<a id="Lighthouse"></a>
+
+### **Lighthouse Testing**
+
+I used lighthouse to test websites performance. I used lighthouse during my project to improve performance such as, googlefonts in one link instead of multiple and images going from jpg to avif which improves file size while maintaining image quality.
+
+
+<details>
+
+<summary> Mobile performance </summary>
+
+![JSLint test](docs/readme_images/jslinttestbefore.png) 
 
 </details>
 
