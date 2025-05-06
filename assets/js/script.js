@@ -62,12 +62,13 @@ const movesText = document.getElementById(
 const backgroundMusic = new Audio("assets/music/gamemusic.mp3");
 backgroundMusic.loop = true;
 let musicStart = false;
-
+backgroundMusic.volume = 0.4;
 
 // Flip card sound effect
 
 const flipCardSound = new Audio("assets/music/flipcard.mp3");
 flipCardSound.preload = "auto";
+flipCardSound.volume = 0.4;
 
 
 // Mute/unmute button
@@ -336,16 +337,16 @@ function checkMatch() {
         if (matchedPairs === (gameBoard.children.length / 2)) {
             if (level === 6) {
                 result.innerText =
-                `Well done, you completed level 6 in ${moves}. ` +
+                `🥳 Well done, you completed level 6 in ${moves}. 🥳 ` +
                  `Resetting game back to level 1..`;
                 setTimeout(() => {
                     level = 1; //Resets to level 1 when level 6 is completed
                     startLevel();
-                }, 2000);
+                }, 4000);
             }  else {
                 result.innerText =
-                `Level complete! You completed the level ` +
-                `in ${moves} moves.`; // Level complete message with moves
+                `🏆 Level complete! You completed the level ` +
+                `in ${moves} moves. 🏆 `; // Level complete message with moves
 
                 // Enables the next level button
                 nextLevelButton.classList.remove("hidden");
@@ -433,9 +434,6 @@ function toggleMute() {
 
 
 muteButton.addEventListener("click", toggleMute);
-
-
-
 
 
 
