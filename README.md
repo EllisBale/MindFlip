@@ -26,6 +26,7 @@ https://ellisbale.github.io/MindFlip/
     - [HTML, CSS and JS valdiation](#Validation)
     - [Browser Compatibility](#Browser)
     - [Bugs & fixes](#Bugs)
+    - [Automated & Manual testing](#Principles)
     - [Functional Testing](#functional)
     - [User story testing](#Userstory)
 
@@ -739,6 +740,71 @@ I noticed this when opening the modal and tabbing out without flipping a card to
 
  </details>
 
+<hr>
+
+### **Principles of automated and manual testing**
+
+<a id="Principles"></a>
+
+#### **Automated Testing**
+
+Automated testing can be very useful for developers. Automated testing involves software tools that run tests without having to test them manually. This type of testing is beneficial for projects that are quite large, this would save time instead of having to manually test. Large projects often have complex features so using automated testing would be a good option.
+
+**Benefits of automated testing:**
+
+ - Reduces human intervention
+
+ - Increased speed
+
+ - Cost efficent
+
+ - Early bug detection
+
+ - Scalability
+
+ - Manual testing reduction
+
+
+ **Types of automated testing**
+
+ - Unit testing
+
+ - Integration testing
+
+ - Non-functional testing
+
+ - Performance testing
+
+ - Keyword driven testing
+
+
+ #### **Manual Testing**
+
+Manual testing involves a person that manually execute test cases in which they can identify any defects a user may come across. Manual testing is preferred over automated testing for its ability to handle certain scenarios where real user experience is crucial. Manual testing is better for short projects while automated is better for large projects. It is best to use manual testing when working on low-budget projects and for usability and visual feedback.
+
+**Benefits of Manual testing:**
+
+- Flexibility & adaptability
+
+- Cost effective
+
+- Quick feedback
+
+- Easy to implement
+
+
+**Types of manual testing:**
+
+- Black box testing
+
+- white box testing
+
+- Unit testing
+
+- Functional testing
+
+- Smoke testing
+
 
 <hr>
 
@@ -871,6 +937,8 @@ Audio volume control (https://developer.mozilla.org/en-US/docs/Web/HTML/Referenc
 Background music (https://pixabay.com/music/beautiful-plays-just-relax-11157/)
 
 visibility change event (https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API#pausing_audio_on_page_hide)
+
+Flip card sound effect (https://pixabay.com/sound-effects/sharp-pop-328170/)
 
 
 **Images used:**
