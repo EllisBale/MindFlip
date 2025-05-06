@@ -516,7 +516,7 @@ Microsoft Edge - This browser seems fine but a few minor differences such as the
 <br>
 <details>
 
-<summary> Images not showing up from my array </summary>
+<summary> Images not showing up from my array. </summary>
 <br>
 I figured out the problem was to do with my images file path and simply forgot to add "assets" before "images/"/
 
@@ -535,7 +535,7 @@ I figured out the problem was to do with my images file path and simply forgot t
 
 <details>
 
-<summary> Unmatching cards not flipping back </summary>
+<summary> Unmatching cards not flipping back. </summary>
 <br>
 I noticed when I was playing, the matching cards would work and be hidden but the unmatching cards would just stay flipped over and not turn back. I fixed this by having a look at my else statement in my checkMatch function and found a spelling mistake which I corrected.
 
@@ -564,7 +564,7 @@ I noticed when I was playing, the matching cards would work and be hidden but th
 <br>
 <details> 
 
-<summary> Issues with grid layout </summary>
+<summary> Issues with grid layout. </summary>
 <br>
 When resizing in chrome dev tools, the grid would be too big for smaller screen sizes causing layout issues. I realised that the grid template column was set to 100px, I fixed this by removing the 100px and adding in "1fr" which shrinks or grows automatically making it more responsive. In the CSS file I changed the gameboard class and added in grid-template-columns to repeat(4, 1fr). I made the card class have a aspect-ratio of 1/1 which makes the width and height the same.
 
@@ -630,7 +630,7 @@ When resizing in chrome dev tools, the grid would be too big for smaller screen 
 <br>
 <details> 
 
-<summary> Grid issues on screens widths 768px and below </summary>
+<summary> Grid issues on screens widths 768px and below. </summary>
 <br>
 
 I was having issues with the gameboard not being in the center of the page. The cards and gameboard would stay to the left when using chrome dev tools and the right would have more space. I fixed this by adding media queries for these screen sizes to fix the positioning.
@@ -657,7 +657,7 @@ I was having issues with the gameboard not being in the center of the page. The 
 
 <details>
 
-<summary> Images not randomizing </summary>
+<summary> Images not randomizing. </summary>
 <br>
 
 When playing I noticed that the images would be the same for each level such as when playing level 1 and 2. I noticed in my images array that the order of the images they start in would be in the same level as the game. For example, the fox and bear would all ways be at the start of level 1. To fix this I decided to add a shuffle to the images.
@@ -675,7 +675,7 @@ When playing I noticed that the images would be the same for each level such as 
 
 <details>
 
-<summary> Unmuting the button won't work when tabbed out and in again </summary>
+<summary> Unmuting the button won't work when tabbed out and in again. </summary>
 <br>
 
 I noticed there was a bug with my mute button when I tabbed out and in again. This bug would only occur when I had the background music on mute to begin then tabbing out and in again to try to unmute it. I fixed this by adding a extra if statement to my mute button function.
@@ -696,7 +696,7 @@ I noticed there was a bug with my mute button when I tabbed out and in again. Th
 
 <details>
 
-<summary> Background music still playing when tabbed out on mobile </summary>
+<summary> Background music still playing when tabbed out on mobile. </summary>
 <br>
 
 When I completed the audio issue when tabbed out for desktop. I realised on my github website on my mobile that the background music was still playing when tabbed out. I fixed this by adding "window.addEventListener("pagehide")" this stops the background music from playing when tabbed out on mobile.
@@ -710,6 +710,36 @@ When I completed the audio issue when tabbed out for desktop. I realised on my g
 
 
  </details>
+
+<br>
+
+<details>
+
+<summary> Background music plays when clicking screen and tabbing out and in again without flipping card.</summary>
+<br>
+
+I noticed this when opening the modal and tabbing out without flipping a card to begin with. To fix this I added musicStart to my if statement.
+
+**Fix** 
+
+`document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+        backgroundMusic.pause();
+} else {
+ if (!isMuted && backgroundMusic.paused && musicStart) {
+        // Play music again when in tab
+        backgroundMusic.play().catch(err => {
+        console.warn("Autoplay failed on return:", err);
+        });
+       }
+    }
+});`
+
+
+
+ </details>
+
+
 <hr>
 
 <a id="Functional"></a>

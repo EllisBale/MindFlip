@@ -66,7 +66,7 @@ let musicStart = false;
 
 // Flip card sound effect
 
-const flipCardSound = new Audio("assets/music/flipcard.mp3")
+const flipCardSound = new Audio("assets/music/flipcard.mp3");
 flipCardSound.preload = "auto";
 
 
@@ -265,7 +265,7 @@ function shuffle(array) {
 
 // Function to flip the cards
 function flipCard(card) {
-    
+
     if(!musicStart) { // Music starts when user flips card
         backgroundMusic.play().catch(err => {
             console.log("Unable to play music", err);
@@ -293,6 +293,25 @@ function flipCard(card) {
 
 
 }
+
+
+// Pauses music from playing when not in tab
+document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+        backgroundMusic.pause();
+
+    } else {
+
+       if (!isMuted && backgroundMusic.paused && musicStart) {
+        // Play music again when in tab
+        backgroundMusic.play().catch(err => {
+        console.warn("Autoplay failed on return:", err);
+        });
+       }
+    }
+
+
+});
 
 
 // Music volume control
@@ -409,6 +428,7 @@ function toggleMute() {
             console.warn("Playback blocked on unmute:", err);
         });
     }
+
 };
 
 
@@ -417,27 +437,15 @@ muteButton.addEventListener("click", toggleMute);
 
 
 
-// Function to pause music from playing when not in tab
-document.addEventListener("visibilitychange", function() {
-    if (document.hidden) {
-        backgroundMusic.pause();
 
-    } else {
-       if (!isMuted &&  backgroundMusic.paused) {
-        // Play music again when in tab
-        backgroundMusic.play().catch(err => {
-            console.warn("Autoplay failed on return:", err);
-        });
-       }
-    }
-
-});
 
 
 window.addEventListener("pagehide", () => {
     // Fixes issue for background music playing when tabbed out on mobile
     backgroundMusic.pause();
 });
+
+
 
 
 levelSelector();
