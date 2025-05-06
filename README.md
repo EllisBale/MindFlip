@@ -393,6 +393,21 @@ For the fonts I imported some fonts from GoogleFonts. For headings I used Rubik 
 </details>
 
 
+#### **404 page redirect**
+
+Added in a redirect page that enables users to redirect to the homepage if they try to access a non-existent page. Using the code below from mdn web docs, I can redirect the page automatically so the user doesn't have to click anything to navigate back.
+
+<details>
+
+<summary> 404 redirect function </summary>
+
+`setTimeout(function() {
+            window.location.href = "https://ellisbale.github.io/MindFlip/"; 
+        }, 2000);`
+
+ </details>
+
+
 <hr>
 
 <a id="Testing"></a>
