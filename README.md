@@ -474,14 +474,24 @@ Removed it from the startlevel function and added it as its own.
 
 ### **Lighthouse Testing**
 
-I used lighthouse to test websites performance. I used lighthouse during my project to improve performance such as, googlefonts in one link instead of multiple and images going from jpg to avif which improves file size while maintaining image quality.
+I used lighthouse to test websites performance. I used lighthouse during my project to improve performance such as, googlefonts in one link instead of multiple and images going from jpg to avif which improves file size while maintaining image quality. Lighthouse testing recommended me to convert my gif files into webp. To improve website performance I added a lazy load to the webp images in modal. This is to improve loading times for more important elements on the page.
 
 
 <details>
 
 <summary> Mobile performance </summary>
 
-![JSLint test](docs/readme_images/jslinttestbefore.png) 
+![Mobile Lighthouse](docs/testing/lighthouse/lhmobile.png) 
+
+</details>
+
+<br>
+
+<details>
+
+<summary> Desktop performance </summary>
+
+![Desktop Lighthouse](docs/testing//lighthouse/lhdesktop.png) 
 
 </details>
 
