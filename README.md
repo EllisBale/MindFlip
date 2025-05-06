@@ -940,6 +940,8 @@ visibility change event (https://developer.mozilla.org/en-US/docs/Web/API/Page_V
 
 Flip card sound effect (https://pixabay.com/sound-effects/sharp-pop-328170/)
 
+Page redirect (https://developer.mozilla.org/en-US/docs/Web/API/Window/location)
+
 
 **Images used:**
 
